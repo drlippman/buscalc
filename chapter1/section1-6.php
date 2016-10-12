@@ -261,9 +261,9 @@
 	<p>We can find the vertical intercept by evaluating the function at zero: \[f(0)=\frac{(0-2)(0+3)}{(0-1)(0+2)(0-5)}=\frac{-6}{10}=-\frac{3}{5}.\]</p>
 	<p>The horizontal intercepts will occur when the function is equal to zero:
 	\[ \begin{align*}
-		0=&amp; \frac{(x-2)(x+3)}{(x-1)(x+2)(x-5)} \qquad \text{(This is zero when the numerator is zero.)}\\
-		0=&amp; (x-2)(x+3)\\
-		x=&amp; 2, -3. 
+		0 &amp; =  \frac{(x-2)(x+3)}{(x-1)(x+2)(x-5)} \qquad \text{(This is zero when the numerator is zero.)}\\
+		0 &amp; =  (x-2)(x+3)\\
+		x &amp; =  2, -3. 
 	\end{align*} \]
 	</p>
 </div>

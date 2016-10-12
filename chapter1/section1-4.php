@@ -70,9 +70,9 @@
 	<h4>Example 3</h4>
 	<p> Simplify \(\left(\dfrac{x^{-2}}{y^{-3}}\right)^2\) as much as possible and write your answer using only positive exponents.
 	\begin{align*}
-		\left(\dfrac{x^{-2}}{y^{-3}}\right)^2=&amp; \dfrac{\left(x^{-2}\right)^2}{\left(y^{-3}\right)^2}\\
-		=&amp; \dfrac{x^{-4}}{y^{-6}}\\
-		=&amp; \dfrac{y^6}{x^4}
+		\left(\dfrac{x^{-2}}{y^{-3}}\right)^2 &amp; =  \dfrac{\left(x^{-2}\right)^2}{\left(y^{-3}\right)^2}\\
+		 &amp; =  \dfrac{x^{-4}}{y^{-6}}\\
+		 &amp; =  \dfrac{y^6}{x^4}
 	\end{align*}
 	</p>
 </div>
@@ -89,9 +89,9 @@
 	<p>Rewrite \( \left(\sqrt{p^5}\right)^{-1/3} \) using only positive exponents.</p>
 	
 	<p>\begin{align*}
-		\left(\sqrt{p^5}\right)^{-1/3}=&amp; \left(\left(p^5\right)^{1/2}\right)^{-1/3}\\
-		=&amp; p^{-5/6}\\
-		=&amp; \frac{1}{ p^{5/6}}
+		\left(\sqrt{p^5}\right)^{-1/3} &amp; =  \left(\left(p^5\right)^{1/2}\right)^{-1/3}\\
+		 &amp; =  p^{-5/6}\\
+		 &amp; =  \frac{1}{ p^{5/6}}
 	\end{align*}
 	</p>
 </div>
@@ -101,9 +101,9 @@
 	<p>Rewrite \( x^{-4/3} \)as a radical.</p>
 	<p>
 	\begin{align*}
-		x^{-4/3}=&amp; \frac{1}{x^{4/3}} \\
-		=&amp; \frac{1}{\left(x^{1/3}\right)^4} \quad \text{(since \(\frac{4}{3}=4\cdot\frac{1}{3}\))}\\
-		=&amp; \frac{1}{\left(\sqrt[3]{x}\right)^4} \quad \text{(using the radical equivalence)}
+		x^{-4/3} &amp; =  \frac{1}{x^{4/3}} \\
+		 &amp; =  \frac{1}{\left(x^{1/3}\right)^4} \quad \text{(since \(\frac{4}{3}=4\cdot\frac{1}{3}\))}\\
+		 &amp; =  \frac{1}{\left(\sqrt[3]{x}\right)^4} \quad \text{(using the radical equivalence)}
 	\end{align*}
 	</p>
 </div>

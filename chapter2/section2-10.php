@@ -15,70 +15,37 @@
  </header>
 
 <section class="content">
-<h1>Section 2.10: Other Applications</h1>
-
-<section><h2>Tangent Line Approximation</h2>
-
-<p>Back when we first thought about the derivative, we used the slope of secant lines over tiny intervals to approximate the derivative: \[ f'(a)\approx \frac{\Delta y}{\Delta x}=\frac{f(x)-f(a)}{x-a}\]</p>
-
-<p>Now that we have other ways to find derivatives, we can exploit this approximation to go the other way. Solve the expression above for \(f(x)\), and you’ll get the tangent line approximation:</p>
-
-<div class="important">
-	<h4>The Tangent Line Approximation (TLA) (or <q>Linear Approximation</q>)</h4>
-	<p>To approximate the value of \(f(x)\) using TLA, find some \(a\) where</p>
-	<ol>
-		<li>\(a\) and \(x\) are <q>close,</q> and</li>
-		<li>You know the exact values of both \(f(a)\) and \(f'(a)\).</li>
-	</ol>
-	<p>Then \[f(x) \approx f(a)+f'(a)(x-a).\]</p>
-	<p>Another way to look at the same formula: \[\Delta y\approx f'(a)\Delta x\]</p>
-	<p>How close is close? It depends on the shape of the graph of \(f\). In general, the closer the better.</p>
-</div>
-
-<figure><img src="images/image099.png" alt="graph"></figure>
-
-<div class="videoplayer w639">
-	<video id="video_2.10." class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
-		<source src="video_2-10/tangent_line_approximation.webm" type='video/webm' />
-		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-10/tangent_line_approximation.mp4" type='video/mp4' />
-		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-	</video>
-</div>
-
-<p>Try it for yourself using this applet (click the button next to L(x) if the line isn't showing up):</p>
-<div style="width:676px;height:482px;" id="applet_container" class="geogebra"></div>
-
-<div class="example">
-	<h4>Example 1</h4>
-	<p>Suppose we know that \(g(20) = 5\) and \(g'(20) = 1.4\). Use this information to approximate \(g(23)\) and \(g(18)\).</p>
-	<p>Using the tangent line approximation: 
-		\[ \begin{align*}
-			g(23)\approx &amp; 5 + (1.4)(23 - 20) = 9.2\\
-			g(18)\approx &amp; 5 + (1.4)(18 - 20) = 2.2
-		\end{align*} \]
-	</p>
-	<p>Note that we don't know if these approximations are close &ndash; but they're the best we can do with the limited information we have to start with. Note also that 18 and 23 are sort of close to 20, so we can hope these approximations are pretty good. We would feel more confident using this information to approximate \(g(20.003)\). We would feel very unsure using this information to approximate \(g(55)\).</p>
-</div>
-
-</section>
-
-<section><h2>Elasticity</h2>
+<h1>Section 2.10: Elasticity of Demand</h1>
 
 <p>We know that demand functions are decreasing, so when the price increases, the quantity demanded goes down. But what about revenue = price \( \times \) quantity? When the price increases will revenue go down because the demand dropped so much? Or will revenue increase because demand didn't drop very much?</p>
 
-<p>Elasticity of demand is a measure of how demand reacts to price changes. It’s normalized &ndash; that means the particular prices and quantities don't matter, and everything is treated as a percent change. The formula for elasticity of demand involves a derivative, which is why we’re discussing it here.</p>
+<div class="example">
+	<h4>Example 1</h4>
+	<p>Suppose a company's demand function is \(D(p) = 100 - p^2\), and the company's current price is $5.  What will happen to revenue if they raise the price $0.05?</p>
+	<p>We are more interested in how the price change compares to the demand change, so we are going to convert everything to relative (percent) changes.</p>
+	<p>The price has increased by \[\frac{\Delta p}{p} = \frac{\$0.05}{\$5} = 0.01 = 1%\]</p>
+	<p>The demand decreased from \(D(5) = 100-5^2 = 75\) to \(D(5.05) = 100-5.05^2 = 74.4975\), a total change of \(75-74.4975 = -0.5025\).  As a relative change, that's 
+		\[\frac{\Delta q}{q} = \frac{-0.05025}{75} = -0.0067 = -0.67%\]</p>
+	<p>By raising the price 1%, the demand only fell by 0.67%.  Since the price is increasing more than the demand falls, we would expect total revenue to increase.  In this case we say that the demand is inelastic.</p>
+</div>
+
+<p>Elasticity of demand is a measure of how demand reacts to price changes. It's normalized &ndash; that means the particular prices and quantities don't matter, and everything is treated as a percent change.</p>
+<p>Following the logic of the example above, we want to compare the relative change in demand to the relative change in price, or in other words, we want to look at \[\frac{\frac{\Delta q}{q}}{\frac{\Delta p}{p}}\].
+   By approximating the changes in demand and price by the derivatives, this formula simplifies to
+   \[\frac{\frac{dq}{q}}{\frac{dp}{p}} = \frac{p}{q}\cdot\frac{dq}{dp}\]
+   </p>
 
 <div class="important">
 	<h4>Elasticity of Demand</h4>
-	<p>Given a demand function that gives \(q\) in terms of \(p\), the <strong>elasticity of demand</strong> is \[E=\left|\frac{p}{q}\cdot \frac{dq}{dp}\right|\]
-</p>
+	<p>Given a demand function that gives \(q\) in terms of \(p\), so \(q = D(p)\), the <strong>elasticity of demand</strong> is \[E=\left|\frac{p}{q}\cdot \frac{dq}{dp}\right| = \left|\frac{p}{q}\cdot D'(p)\right| \]</p> 
 	<p>(Note that since demand is a decreasing function of \(p\), the derivative is negative. That's why we have the absolute values &ndash; so \(E\) will always be positive.)</p>
+	<p>You may also see this formula written as \[E = - \frac{p \cdot D'(p)}{D(p)}\] The two forms of the equation are equivalent, and you can use either.</p>
 	<ul>
 		<li>If \(E \lt 1\), we say demand is inelastic. In this case, raising prices increases revenue.</li>
 		<li>If \(E \gt 1\), we say demand is elastic. In this case, raising prices decreases revenue.</li>
 		<li>If \(E = 1\), we say demand is unitary. \(E = 1\) at critical points of the revenue function.</li>
 	</ul>
-	<h3>Interpretation of elasticity</h3>
+	<h4>Interpretation of elasticity</h4>
 	<p>If the price increases by 1%, the demand will decrease by E%.</p>
 </div>
 
@@ -112,16 +79,16 @@
 	<p>At a price of $15, a 1% increase in price would decrease demand by 2.571%. Revenue could be raised by decreasing prices.</p>
 	<p>To maximize the revenue, we could solve for when \( E = 1 \):
 	\[ \begin{align*}
-		\left| \frac{-2p^2}{400-p^2} \right|=&amp; 1 \\
-		2p^2=&amp; 400-p^2 \\
-		3p^2=&amp; 400 \\
-		p=&amp; \sqrt{\frac{400}{3}}\approx 11.55.
+		\left| \frac{-2p^2}{400-p^2} \right| &amp; =  1 \\
+		2p^2 &amp; =  400-p^2 \\
+		3p^2 &amp; =  400 \\
+		p &amp; =  \sqrt{\frac{400}{3}}\approx 11.55.
 	\end{align*} \]
 	</p>
 	<p>A price of $11.55 will maximize the revenue.</p>
 </div>
 
-</section>
+<p>As you saw the in last example, elasticity provides another way to determine the price that will maximize revenue given a demand function.  It is not quicker or easier than the methods learned earlier in the course, but you are welcome to use either technique.</p>
 
 <!--
 <aside>

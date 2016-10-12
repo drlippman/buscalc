@@ -133,7 +133,7 @@
 			<p>The consumer surplus is
 				\[ \begin{align*}
 					\int\limits_0^{400} \text{(demand)}\, dq-(40)(400)\approx &amp;  \\
-					(100)(70+61+53+46)-(40)(400)=&amp; \$7000
+					(100)(70+61+53+46)-(40)(400) &amp; =  \$7000
 				\end{align*} \]
 				So the consumer surplus is about $7000.
 			</p>
@@ -141,7 +141,7 @@
 			<p>The producer surplus is
 				\[ \begin{align*}
 					(40)(400)-\int\limits_0^{400} \text{(supply)}\, dq \approx &amp;  \\
-					(40)(400)-(100)(14+21+28+33)=&amp; \$6400
+					(40)(400)-(100)(14+21+28+33) &amp; =  \$6400
 				\end{align*} \]
 				So the producer surplus is about $6400.
 			</p>

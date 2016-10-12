@@ -53,8 +53,8 @@
 	<p>The remaining integral is a basic one we can now evaluate: \[ \int_1^4 6x^2\ln(x)\, dx = \left.2x^3\ln(x)\right]_1^4 - \left.3x^2\right]_1^4 \]</p>
 	<p>Finally, we can evaluate the expressions:
 		\[ \begin{align*}
-			\int_1^4 6x^2\ln(x)\, dx=&amp; \left(\left(2\cdot 4^3\ln(4)\right)-\left(2\cdot 1^3\ln(1)\right)\right)-\left(\left(3\cdot 4^2\right)-\left(3\cdot 1^2\right)\right)\\
-			=&amp; 128\ln(4)-45\\
+			\int_1^4 6x^2\ln(x)\, dx &amp; =  \left(\left(2\cdot 4^3\ln(4)\right)-\left(2\cdot 1^3\ln(1)\right)\right)-\left(\left(3\cdot 4^2\right)-\left(3\cdot 1^2\right)\right)\\
+			 &amp; =  128\ln(4)-45\\
 			\approx &amp; 132.446
 		\end{align*} \]
 	</p>
@@ -72,8 +72,8 @@
 	<h4>Table of Integral Examples</h4>
 	<p>
 		\[ \begin{align*}
-			\int \frac{1}{x^2-a^2}\, dx =&amp; \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C \\
-			\int \frac{1}{\sqrt{x^2+a^2}}\, dx =&amp; \ln\left|x+\sqrt{x^2+a^2}\right|+C
+			\int \frac{1}{x^2-a^2}\, dx  &amp; =  \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C \\
+			\int \frac{1}{\sqrt{x^2+a^2}}\, dx  &amp; =  \ln\left|x+\sqrt{x^2+a^2}\right|+C
 		\end{align*} \]
 	</p>
 </div>
@@ -85,8 +85,8 @@
 	<p>Now we simply use the formula from the table, with \(a = 3\).
 		\[ \begin{align*}
 			\int\frac{5}{x^2-9}\, dx = &amp; 5\int\frac{1}{x^2-3^2}\, dx \\
-			=&amp; 5\left(\frac{1}{2\cdot 3}\ln\left|\frac{x-3}{x+3}\right|\right)+C \\
-			=&amp; \frac{5}{6}\ln\left|\frac{x-3}{x+3}\right|+C
+			 &amp; =  5\left(\frac{1}{2\cdot 3}\ln\left|\frac{x-3}{x+3}\right|\right)+C \\
+			 &amp; =  \frac{5}{6}\ln\left|\frac{x-3}{x+3}\right|+C
 		\end{align*} \]
 	</p>
 </div>

@@ -59,18 +59,18 @@
 			<p>Translate all your \(x\)'s into \(u\)'s everywhere in the integral, including the \(dx\):</p>
 			<p>
 				\[ \begin{align*}
-					\int\frac{x}{\sqrt{4-x^2}}\, dx=&amp; \int\frac{1}{\sqrt{4-x^2}}(x\, dx) \\
-					=&amp; \int\frac{1}{\sqrt{u}}\left(-\frac{1}{2}du\right) \\
-					=&amp; -\frac{1}{2}\int\frac{1}{\sqrt{u}}\, du \\
-					=&amp; -\frac{1}{2}\int u^{-1/2}\, du
+					\int\frac{x}{\sqrt{4-x^2}}\, dx &amp; =  \int\frac{1}{\sqrt{4-x^2}}(x\, dx) \\
+					 &amp; =  \int\frac{1}{\sqrt{u}}\left(-\frac{1}{2}du\right) \\
+					 &amp; =  -\frac{1}{2}\int\frac{1}{\sqrt{u}}\, du \\
+					 &amp; =  -\frac{1}{2}\int u^{-1/2}\, du
 				\end{align*} \]
 			</p>
 			<p>Alternatively, we could have solved for dx and substituted that and simplified: \( dx=\frac{du}{-2x} \), so
 				\[ \begin{align*}
-					\int\frac{x}{\sqrt{4-x^2}}\, dx=&amp; \int\frac{x}{\sqrt{u}}\left(\frac{du}{-2x}\right) \\
-					=&amp; \int\frac{1}{\sqrt{u}}\left(-\frac{1}{2}du\right) \\
-					=&amp; -\frac{1}{2}\int\frac{1}{\sqrt{u}}\, du \\
-					=&amp; -\frac{1}{2}\int u^{-1/2}\, du
+					\int\frac{x}{\sqrt{4-x^2}}\, dx &amp; =  \int\frac{x}{\sqrt{u}}\left(\frac{du}{-2x}\right) \\
+					 &amp; =  \int\frac{1}{\sqrt{u}}\left(-\frac{1}{2}du\right) \\
+					 &amp; =  -\frac{1}{2}\int\frac{1}{\sqrt{u}}\, du \\
+					 &amp; =  -\frac{1}{2}\int u^{-1/2}\, du
 				\end{align*} \]
 			</p>
 		</li>
@@ -86,10 +86,10 @@
 	<p>Thus we have found \[ \int\frac{x}{\sqrt{4-x^2}}\, dx= -\sqrt{4-x^2}+C \]</p>
 	<p>How would we check this? By differentiating:
 		\[ \begin{align*}
-			\frac{d}{dx}\left(-\sqrt{4-x^2}+C\right)=&amp; \frac{d}{dx}\left(-\left(4-x^2\right)^{1/2}+C\right) \\
-			=&amp; -\frac{1}{2}\left(4-x^2\right)^{-1/2}(-2x) \\
-			=&amp; x\left(4-x^2\right)^{-1/2} \\
-			=&amp; \frac{x}{\sqrt{4-x^2}}
+			\frac{d}{dx}\left(-\sqrt{4-x^2}+C\right) &amp; =  \frac{d}{dx}\left(-\left(4-x^2\right)^{1/2}+C\right) \\
+			 &amp; =  -\frac{1}{2}\left(4-x^2\right)^{-1/2}(-2x) \\
+			 &amp; =  x\left(4-x^2\right)^{-1/2} \\
+			 &amp; =  \frac{x}{\sqrt{4-x^2}}
 		\end{align*} \]
 	</p>
 </div>
@@ -128,14 +128,14 @@
 		<li>
 			<p>It is tempting to start this problem the same way we did the last, but if we try it will not work, since the numerator of this fraction is not the derivative of the denominator. Instead, we need to try a different approach. For this problem, we can use some basic algebra:
 			\[ \begin{align*}
-				\int\frac{x^3+5}{x^2}\, dx =&amp; \int\left(\frac{x^3}{x^2}+\frac{5}{x^2}\right)\, dx \\
-				=&amp; \int\left(x+5x^{-2}\right)\, dx.
+				\int\frac{x^3+5}{x^2}\, dx  &amp; =  \int\left(\frac{x^3}{x^2}+\frac{5}{x^2}\right)\, dx \\
+				 &amp; =  \int\left(x+5x^{-2}\right)\, dx.
 			\end{align*} \]
 			</p>
 			<p>We can integrate this using our basic rules, without needing substitution: 
 			\[ \begin{align*}
-				\int\left(x+5x^{-2}\right)\, dx=&amp; \frac{x^2}{2}+5\frac{x^{-1}}{-1}+C \\
-				=&amp; \frac{1}{2}x^2-\frac{5}{x}+C.
+				\int\left(x+5x^{-2}\right)\, dx &amp; =  \frac{x^2}{2}+5\frac{x^{-1}}{-1}+C \\
+				 &amp; =  \frac{1}{2}x^2-\frac{5}{x}+C.
 			\end{align*} \]
 			</p>
 		</li>
@@ -173,11 +173,11 @@
 			<p>Let \( u=3x-1 \). Then \( du=3\, dx \) and, substituting for the limits of integration, when \(x = 0\), \(u = -1\), and when \(x = 1\), \(u = 2\).</p>
 			<p>So,
 				\[ \begin{align*}
-					\int_{x=0}^{x=1} (3x-1)^4\, dx =&amp; \int_{u=-1}^{u=2} u^4\left(\frac{1}{3}\, du\right) \\
-					=&amp; \left.\frac{u^5}{15}\right]_{u=-1}^{u=2} \\
-					=&amp; \frac{(2)^5}{15}-\frac{(-1)^5}{15} \\
-					=&amp; \frac{32}{15}-\frac{-1}{15} \\
-					=&amp; \frac{33}{15}
+					\int_{x=0}^{x=1} (3x-1)^4\, dx  &amp; =  \int_{u=-1}^{u=2} u^4\left(\frac{1}{3}\, du\right) \\
+					 &amp; =  \left.\frac{u^5}{15}\right]_{u=-1}^{u=2} \\
+					 &amp; =  \frac{(2)^5}{15}-\frac{(-1)^5}{15} \\
+					 &amp; =  \frac{32}{15}-\frac{-1}{15} \\
+					 &amp; =  \frac{33}{15}
 				\end{align*} \]
 			</p>
 		</li>
@@ -198,9 +198,9 @@
 	<p>I can see the derivative of \( \ln(x) \) in the integrand, so I can tell that substitution is a good choice.</p>
 	<p>Let \( u=\ln(x) \). Then \( du=\frac{1}{x}\, dx \). When \( x=2 \), \( u=\ln(2) \). When \( x=10 \), \( u=\ln(10) \). So the new definite integral is
 		\[ \begin{align*}
-			\int\limits_{x=2}^{x=10}\frac{\left(\ln(x)\right)^6}{x}\, dx =&amp; \int\limits_{u=\ln(2)}^{u=\ln(10)} u^6\, du \\
-			=&amp; \left.\frac{u^7}{7}\right]_{u=\ln(2)}^{u=\ln(10)} \\
-			=&amp; \frac{1}{7}\left(\left(\ln(10)\right)^7-\left(\ln(2)\right)^7\right) \\
+			\int\limits_{x=2}^{x=10}\frac{\left(\ln(x)\right)^6}{x}\, dx  &amp; =  \int\limits_{u=\ln(2)}^{u=\ln(10)} u^6\, du \\
+			 &amp; =  \left.\frac{u^7}{7}\right]_{u=\ln(2)}^{u=\ln(10)} \\
+			 &amp; =  \frac{1}{7}\left(\left(\ln(10)\right)^7-\left(\ln(2)\right)^7\right) \\
 			\approx &amp; 49.01.
 		\end{align*} \]
 	</p>

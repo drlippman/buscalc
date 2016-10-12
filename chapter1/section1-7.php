@@ -195,7 +195,16 @@
 <p>Notice that changing the value for a changes the vertical intercept.  Since \(a\) is multiplying the \(b^x\) term, \(a\) acts as a vertical stretch factor, not as a shift.  Notice also that the long run behavior for all of these functions is the same because the growth factor did not change and none of these \(a\) values introduced a vertical flip.</p>
 
 <p>Try it for yourself using this applet:</p>
+<!--
 <div style="width:676px;height:482px;" id="applet_container" class="geogebra"></div>
+-->
+<div id="jxgexpslider" style="width:400px; height:400px; margin:auto;"></div>
+<script type="text/javascript">
+  var brd = JXG.JSXGraph.initBoard('jxgexpslider', {boundingbox: [-10, 15, 10, -5], axis:true}),
+    a = brd.create('slider',[[2,-2],[7,-2],[0.01,1,10]], {name:'a'}),
+    b = brd.create('slider',[[2,-3],[7,-3],[0.01,1.5,3]], {name:'b'}),
+    f = brd.create('functiongraph',[function(x){return a.Value()*Math.pow(b.Value(),x);}]);
+</script>
 
 <div class="example">
 	<h4>Example 7</h4>

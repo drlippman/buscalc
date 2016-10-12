@@ -24,6 +24,37 @@
 	<p>Now we are ready to write an equation for the area the fence encloses.  We know the area of a rectangle is length multiplied by width, so \( A=LW=L(80-2l) \), so \[ A(L)=80L-2L^2. \] This formula represents the area of the fence in terms of the variable length \(L\).</p>
 </div>
 
+<div class="example">
+	<h4>Example 2</h4>
+	<p>A local newspaper currently has 84,000 subscribers, at a quarterly charge of $30. Market research has suggested that if they raised the price to $32, they would lose 5,000 subscribers. Assuming that subscriptions are linearly related to the price, create an equation to model their revenue as a function of the quarterly charge.</p>
+	
+	<p>Revenue is the amount of money a company brings in. In this case, the revenue can be found by multiplying the charge per subscription times the number of subscribers. We can introduce variables, <em>C</em> for charge per subscription and <em>S</em> for the number subscribers, giving us the equation:</p>
+	<p>Revenue = \(C S\)</p>
+	
+	<p>Since the number of subscribers changes with the price, we need to find a relationship between the variables.</p>
+	
+	<p>We know that currently \(S = 84,000\) and \(C = 30\), and that if they raise the price to $32 they would lose 5,000 subscribers, giving a second pair of values, \(S = 79,000\) and \(C = 32\). From this we can find a linear equation relating the two quantities. Treating \(C\) as the input and \(S\) as the output, the equation will have form \(S = mC + b\). The slope will be</p>
+	\[m = \dfrac{79,000 - 84,000}{32-30} = \dfrac{-5,000}{2} = -2,500\]</p>
+	
+	<p>This tells us the paper will lose 2,500 subscribers for each dollar they raise the price. We can then solve for the vertical intercept.<br/>
+	\[S = -2500C + b\]
+	</p>
+	
+	<p> Plug in the point \(S = 84,000\) and \(C = 30\)<br/>
+	\[84000 = -2500(30) + b\]</p>
+	<p>Solve for \(b\)<br/>
+	\[b = 159,000\]</p>
+	
+	<p>This gives us the linear equation \(S = -2,500C + 159,000\) relating cost and subscribers. Note this is a demand equation where \(C\) is the price and \(S\) is the quantity demanded. We now return to our revenue equation.</p>
+	<p>Revenue = \(C S\)</p>
+	<p>Substituting the equation for <em>S</em> from above:<br/>
+	Revenue = \(C \left(-2,500C + 159,000\right)\)</p>
+	<p>Expanding<br/>
+	Revenue = \(-2,500C^2 + 159,000C\)</p>
+	
+	<p>We now have a quadratic equation for revenue as a function of the subscription charge. Later in the course we will use equations like this to determine the price to charge to maximize revenue.</p>	
+</div>
+
 <div class="thmdef">
 	<h4>Forms of Quadratic Functions</h4>
 	<p>The <strong>standard form</strong> of a quadratic function is \( f(x)=ax^2+bx+c \).</p>
@@ -32,14 +63,14 @@
 </div>
 
 <div class="example">
-	<h4>Example 2</h4>
+	<h4>Example 3</h4>
 	<p>Write an equation for the quadratic graphed below as a transformation of \( f(x)=x^2 \).</p>
 	<figure><img src="images/image057.png" alt="graph"/></figure>
 	<p>We can see the graph is the basic quadratic shifted to the left 2 and down 3, putting the vertex at \((-2, -3)\), giving a formula in the form \( g(x)=a(x+2)^2-3 \).  By plugging in a point that falls on the grid, such as \((0,-1)\), we can solve for the stretch factor:
 	\[\begin{align*}
-		-1=&amp;a(0+2)^2-3 \\
-		2=&amp; 4a \\
-		a=&amp; \frac{1}{2}
+		-1 &amp; = a(0+2)^2-3 \\
+		2 &amp; =  4a \\
+		a &amp; =  \frac{1}{2}
 	\end{align*}\]
 	</p>
 	<p>The  equation for this formula is \[ g(x)=\frac{1}{2}(x+2)^2-3 \]</p>
@@ -70,18 +101,18 @@
 <p>Notice that in the standard form of a quadratic, the constant term c reveals the vertical intercept of the graph, since \( f(0)=a(0)^2+b(0)+c=c \).</p>
 
 <div class="example">
-	<h4>Example 3</h4>
+	<h4>Example 4</h4>
 	<p>Find the vertical and horizontal intercepts of the quadratic \( f(x)=3x^2+5x-2 \).</p>
 	<p>We can find the vertical intercept by evaluating the function at an input of zero: \[f(0)=3(0)^2+5(0)-2=-2\] So the vertical intercept is at (0,-2)</p>
 	<p>For the horizontal intercepts, we solve for when the output will be zero: \[0=3x^2+5x-2.\] In this case, the quadratic can be factored easily, providing the simplest method for solution.: \[0=(3x-1)(x+2),\] so either
 	\[ \begin{align*}
-		0=&amp; 3x-1\\
-		x=&amp; \frac{1}{3}
+		0 &amp; =  3x-1\\
+		x &amp; =  \frac{1}{3}
 	\end{align*} \]
 	or
 	\[ \begin{align*}
-		0=&amp; x+2\\
-		x=&amp; -2
+		0 &amp; =  x+2\\
+		x &amp; =  -2
 	\end{align*} \]
 	So the Horizontal intercepts are at \( \left(\frac{1}{3},0\right) \) and \((-2,0)\).</p>
 </div>
@@ -102,7 +133,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 4</h4>
+	<h4>Example 5</h4>
 	<p>A ball is thrown upwards from the top of a 40 foot high building at a speed of 80 feet per second.  The ball’s height above ground can be modeled by the equation \[ H(t)=-16t^2+80t+40 .\]  When does the ball hit the ground?</p>
 	<p>To find when the ball hits the ground, we need to determine when the height is zero, i.e.,  when \(H(t) = 0\).  While we could do this using the transformation form of the quadratic, we can also use the quadratic formula: \[ t=\frac{-80\pm \sqrt{80^2-4(-16)(40)}}{2(-16)}=\frac{-80\pm\sqrt{8960}}{-32} \]</p>
 	<p>Since the square root does not simplify nicely, we can use a calculator to approximate the values of the solutions:\[ t=\frac{-80-\sqrt{8960}}{-32}\approx 5.458 \quad\text{or}\quad t=\frac{-80+\sqrt{8960}}{-32}\approx -0.458 \]</p>

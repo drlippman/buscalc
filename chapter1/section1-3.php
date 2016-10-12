@@ -90,7 +90,8 @@ When dollars per mile are multiplied by a number of miles, the result is a numbe
 
 <div class="thmdef">
 	<h4>Calculating Rate of Change</h4>
-	<p>Given two values for the input, \( x_1 \) and \( x_2 \), and two corresponding values for the output, \( y_1 \) and \( y_2 \), or a set of points, \( (x_1,y_1) \) and \( (x_2,y_2) \), if we wish to find a linear function that contains both points we can calculate the rate of change, \(m\):\[m=\dfrac{\text{change in output}}{\text{change in input}}=\dfrac{\Delta y}{\Delta x}=\dfrac{y_2-y_1}{x_2-x_1}.\]</p>
+	<p>Given two values for the input, 
+\( x_1 \) and \( x_2 \), and two corresponding values for the output, \( y_1 \) and \( y_2 \), or a set of points, \( (x_1,y_1) \) and \( (x_2,y_2) \), if we wish to find a linear function that contains both points we can calculate the rate of change, \(m\):\[m=\dfrac{\text{change in output}}{\text{change in input}}=\dfrac{\Delta y}{\Delta x}=\dfrac{y_2-y_1}{x_2-x_1}.\]</p>
 	<p>Rate of change of a linear function is also called the <strong>slope</strong> of the line.</p>
 	<p>Note in function notation, \(y_1=f(x_1)\) and \(y_2=f(x_2)\), so we could equivalently write \[m=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}.\]</p>
 </div>
@@ -163,9 +164,9 @@ When dollars per mile are multiplied by a number of miles, the result is a numbe
 	
 	<p>If we wanted this in function form (slope intercept form), we could rewrite the equation into that form:
 	\begin{align*}
-		I-760=&amp; 80(n-3)\\
-		I-760=&amp; 80n-240\\
-		I(n)=&amp; 520+80n 
+		I-760 &amp; =  80(n-3)\\
+		I-760 &amp; = 80n-240\\
+		I(n) &amp; = 520+80n 
 	\end{align*}</p>
 	
 	<p>This form allows us to see the starting value for the function: 520. This is Ilya’s income when n = 0, which means no new policies are sold. We can interpret this as Ilya’s base salary for the week, which does not depend upon the number of policies sold. </p>
@@ -200,16 +201,25 @@ The slope is \(-\frac{2}{3}\). This tells us that for every 3 units the graph "r
 <figure><img src="images/image051.png" alt="graph"/><figcaption>\(f(x)=mx+b\) for several values of \(b\).</figcaption></figure>
 
 <p>Try it for yourself using this applet:</p>
+<!--
 <div style="width:676px;height:482px;" id="applet_container" class="geogebra"></div>
+-->
+<div id="jxglinearslider" style="width:600px; height:400px;margin:auto;"></div>
+<script type="text/javascript">
+  var brd = JXG.JSXGraph.initBoard('jxglinearslider', {boundingbox: [-15, 10, 15, -10], axis:true}),
+    m = brd.create('slider',[[7,-6],[12,-6],[-5,1,5]], {name:'m'}),
+    b = brd.create('slider',[[7,-7],[12,-7],[-8,2,8]], {name:'b'}),
+    f = brd.create('functiongraph',[function(x){return m.Value()*x + b.Value();}]);
+</script>
 
 <div class="example">
 	<h4>Example </h4>
 	<p>Match each equation with one of the lines in the graph below
 	\begin{align*}
-		f(x)=&amp; 2x+3\\
-		g(x)=&amp; 2x-3\\
-		h(x)=&amp; -2x+3\\
-		j(x)=&amp; \frac{1}{2}x+3
+		f(x) &amp; =  2x+3\\
+		g(x) &amp; =  2x-3\\
+		h(x) &amp; =  -2x+3\\
+		j(x) &amp; =  \frac{1}{2}x+3
 	\end{align*}
 	</p>
 	<figure><img src="images/image052.png" alt="graph"/></figure>
@@ -229,9 +239,9 @@ The slope is \(-\frac{2}{3}\). This tells us that for every 3 units the graph "r
 	<p>Find the horizontal intercept of \(f(x)=-3+\frac{1}{2}x\)</p>
 	<p>Setting the function equal to zero to find what input will put us on the horizontal axis:
 	\begin{align*}
-		0=&amp; -3+\frac{1}{2}x\\
-		3=&amp; \frac{1}{2}x\\
-		x=&amp; 6
+		0 &amp; =  -3+\frac{1}{2}x\\
+		3 &amp; =  \frac{1}{2}x\\
+		x &amp; =  6
 	\end{align*}
 	Thus the graph crosses the horizontal axis at (6,0).</p>
 </div>
@@ -246,8 +256,8 @@ The slope is \(-\frac{2}{3}\). This tells us that for every 3 units the graph "r
 	<p>The supply, in thousands of items, for custom phone cases can be modeled by the equation ,\(s(p)=0.5+1.2p\) while the demand can be modeled by \(d(p)=8.7-0.7p\), where \(p\) is in dollars. Find the equilibrium price and quantity, the intersection of the supply and demand curves.</p>
 	<p>Setting \(s(p)=d(p)\), we find 
 	\begin{align*}
-		0.5+1.2p=&amp; 8.7-0.7p\\
-		1.9p=&amp; 8.2\\
+		0.5+1.2p &amp; =  8.7-0.7p\\
+		1.9p &amp; =  8.2\\
 		p\approx&amp; \$4.32 
 	\end{align*}
 	</p>
@@ -256,6 +266,85 @@ The slope is \(-\frac{2}{3}\). This tells us that for every 3 units the graph "r
 	<figure><img src="images/image053.png" alt="intersecting graphs"/></figure>
 </div>
 
+<h3>Business Applications</h3>
+<p>In business, a very common application of functions is to model cost, revenue, and profit.</p>
+<div class="thmdef">
+	<h4>Cost, Revenue, Profit</h4>
+	<p>When a company produces <em>q</em> items, the <strong>total cost</strong> is the cost of total cost of producing those items. The total cost includes both <strong>fixed costs</strong>, which are startup costs, like equipment and buildings, and <strong>variable costs</strong>, which are costs that depend on the number of items produced, like materials and labor.</p>
+	<p>In the most simple case, <strong>Total Cost = (Fixed Costs) + (Variable Costs) &middot; <em>q</em></strong></p>
+	<p><strong>Revenue</strong> is the amount of money a company brings in from sales.</p>
+	<p>In the most simple case, <strong>Revenue = (Price per item) &middot; <em>q</em></strong></p>
+	<p><strong>Profit</strong> is the amount of money brings in, after expenses.</p>
+	<p><strong>Profit = Revenue &ndash; Costs </strong></p>
+	<p>We often talk about the <strong>break-even</strong> point.&nbsp; This is the level of production where Revenue equals Cost, or equivalently where Profit is zero. This is typically the minimum level of sales necessary for the company to make a profit.</p>
+</div>
+<div class="example">
+	<h4>Example 11</h4>
+	<p>A tech startup is looking at developing and launching a new mobile app.  Initial development of the app will cost $300,000, and they estimate marketing and support for each user will cost $0.50.  While the app will be free, they estimate they will be able to bring in $2 per user on average from in-app purchases.  How many users will the company need to break even?</p>
+	<p>We start by modeling the cost, revenue, and profit.  Let <em>q</em> = number of users.</p>
+	<p>The fixed (initial) costs are $300,000, and the variable (per-item) costs as $0.50 per user.  We can write the total cost equation:<br/>
+	\(TC(q) = 300,000 + 0.50q\)</p>
+	<p>The revenue will be $2 per user, so the revenue equation will be:<br/>
+	\(R(q) = 2q\)
+	</p>
+	<p>We could find the break-even point by setting the total cost equal to the revenue, which is equivalent to finding the intersection of the lines.<br/>
+	<img src="images/breakeven.png" alt="graph" width="600"/>
+	</p>
+	<p>Alternatively, we could go ahead and find a profit equation first:<br/>
+	\(P(q) = R(q) - TC(q) = 2q - (300,000+0.50q) = 1.5q - 300,000\)</p>
+	<p>The break even point can be found by setting the profit equal to zero:
+	\begin{align*}
+		0  &amp; =  1.5q - 300,000\\
+		q  &amp; =  200,000
+	\end{align*}
+	</p>	
+	<p>The company will have to acquire 200,000 users to break even.</p>
+</div>
+
+<p>In economics, there is a model for how prices are determined in a free market which states that <strong>supply and demand</strong> for a product is related to the price.  The demand relationship shows the quantity of a certain product that consumers are willing to buy at a certain price.  Typically the quantity demanded will decrease for an item if the price increases.  The supply relationship shows the quantity of a product that suppliers are willing to produce at a certain sales price.  Typically the supply demanded will increase if the price increases.  Economic theory says that supply and demand will interact, and the intersection will be the equilibrium price, or market price, where the quantity supplied and demanded will be equal.</p>
+
+<div class="thmdef">
+	<h4>Supply and Demand</h4>
+	<p>If <em>p</em> is the price of a product, then</p>
+	<p><em>Q<sub>d</sub></em> is the quantity demanded</p>
+	<p><em>Q<sub>s</sub></em> is the quantity supplied</p>
+	<p>The demand curve is a decreasing function, while the supply curve is an increasing function.</p>
+	<p>The intersection of the curves is the <strong>equilibrium price and quantity</strong>, also called the <strong>market price and quantity</strong>.  This point is often notated as <em>p<sup>*</sup></em>, <em>Q<sup>*</sup></em>.</p>
+</div>
+<p>Later in the course you will explore supply and demand curves that are non-linear, but in this section we will focus on linear supply and demand functions.</p>
+<p>In most economic books, you will see the supply and demand curve written with price as the input and quantity as the output, like .  However, supply and demand graphs are drawn with price on the vertical axis and quantity on the horizontal.  We can write the equation in whichever way is more convenient for us.</p>
+<div class="example">
+	<h4>Example 12</h4>
+	<p>At a price of $2.50 per gallon, there is a demand in a certain town for 42.5 thousand gallons of gas and a supply of 20 thousand gallons.  At a price of $3.50, there is demand for 25.5 thousand gallons and a supply of 28 thousand gallons.  Assuming supply and demand are linear, find the equilibrium price and quantity.</p>
+	<p>We start by finding a linear equation for both supply and demand.  We will use price, \(p\) in dollars, as the output and quantity, \(q\) in thousands of gallons, as the input.</p>
+	<p>For supply, we have the points (20, 2.50) and (28, 3.50).</p>
+	<p>Finding the slope: \(m = \dfrac{3.50-2.50}{28-20} = \frac{1}{8}\)</p>
+	<p>We know the equation will look like \(p = \frac{1}{8}q+b\), so substituting in (20, 2.50)
+	\begin{align*}
+		2.5  &amp; =  \frac{1}{8}(20) +b \\
+		2.5  &amp; =  2.5 +b \\
+		q  &amp; =  0
+	\end{align*}
+	</p>
+	<p>The supply equation is: \(p = \frac{1}{8}q\)</p>
+	<p>For demand, we have the points (42.5, 2.50) and (25.5, 3.50).  Using a similar approach, we can find the demand equation is: \(p = -\frac{1}{17}q+5\)</p>
+	<p>To find the equilibrium, we set the supply equal to the demand:<br/>
+	\(\frac{1}{8}q = -\frac{1}{17}q+5\)
+	</p>
+	<p>Multiplying through by 8(17) = 136 to clear the fractions, <br/>
+	\(136\left(\frac{1}{8}q\right) = 136\left(-\frac{1}{17}q+5\right)\)<br/>
+	\(17q = -8q+680\)
+	</p>
+	<p>Now we solve for \(q\)<br/>
+	\(25q = 680\)<br/>
+	\(q = 27.2\)
+	</p>
+	<p>To find the equilibrium price, we can substitute that value back into either equation:<br/>
+	\(p = \frac{1}{8}(27.2) = 3.4\)
+	</p>
+	<p>The equilibrium quantity will be 27.2 thousand gallons of gas at a price of $3.40.<br/>
+	<img src="images/equilib.png" alt="graph" width="600"/></p>
+</div>
 <!--
 <aside>
 <h2>Exercises</h2>

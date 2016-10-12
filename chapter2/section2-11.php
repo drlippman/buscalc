@@ -40,8 +40,8 @@
 		<li>We need the chain rule since y is a function of x: \[ \frac{d}{dx}\left( y^3 \right)=3y^2\frac{dy}{dx}\overset{\text{or}}{=}3y^2y' \]</li>
 		<li>We need to use the product rule and the Chain Rule:
 			\[ \begin{align*}
-				\frac{d}{dx}\left( x^3y^2 \right)=&amp; x^3\frac{d}{dx}\left( y^2 \right)+y^2\frac{d}{dx}\left( x^3\right) \\
-				=&amp; x^32y\frac{dy}{dx}+y^23x^2 \\
+				\frac{d}{dx}\left( x^3y^2 \right) &amp; =  x^3\frac{d}{dx}\left( y^2 \right)+y^2\frac{d}{dx}\left( x^3\right) \\
+				 &amp; =  x^32y\frac{dy}{dx}+y^23x^2 \\
 				\overset{\text{or}}{=}&amp; 2x^3yy'+3y^2x^2
 			\end{align*} \]</li>
 		<li>We know \( \frac{d}{dx}\left( \ln(x) \right) =\frac{1}{x} \), so we use that and the Chain Rule: \[ \frac{d}{dx}\left( \ln(y) \right)=\frac{1}{y}\cdot y' \]</li>
@@ -74,8 +74,8 @@
 	<p>Find the slope of the tangent line to the circle \(x^2 + y^2 = 25\) at the point (3,4) using implicit differentiation.</p>
 	<p>We differentiate each side of the equation \(x^2 + y^2 = 25\) and then solve for \(y'\): 
 	\[ \begin{align*}
-		\frac{d}{dx}\left(x^2+y^2\right)=&amp; \frac{d}{dx}(25)\\
-		2x+2yy'=&amp; 0
+		\frac{d}{dx}\left(x^2+y^2\right) &amp; =  \frac{d}{dx}(25)\\
+		2x+2yy' &amp; =  0
 	\end{align*} \]
 	</p>
 	<p>Solving for \(y'\), we have \( y'=-\frac{2x}{2y}=-\frac{x}{y} \), and, at the point (3,4), \[y'=-\frac{3}{4}.\]</p>
@@ -119,8 +119,8 @@
 	<p>Now we need an equation relating our variables, which is the area equation: \[A=\pi r^2.\]</p>
 	<p>Taking the derivative of both sides of that equation with respect to \(t\), we can use implicit differentiation:
 	\[ \begin{align*}
-		\frac{d}{dt}\left( A \right)=&amp; \frac{d}{dt}\left( \pi r^2 \right)\\
-		\frac{dA}{dt}=&amp; \pi 2r\frac{dr}{dt}
+		\frac{d}{dt}\left( A \right) &amp; =  \frac{d}{dt}\left( \pi r^2 \right)\\
+		\frac{dA}{dt} &amp; =  \pi 2r\frac{dr}{dt}
 	\end{align*} \]
 	</p>
 	<p>Plugging in the values we know for \(r\) and \(\frac{dr}{dt}\), \[ \frac{dA}{dt}=\pi 2(5\text{ miles})\left(0.1\frac{\text{miles}}{\text{year}}\right)=\pi\frac{\text{miles}^2}{\text{year}}\]</p>
@@ -153,13 +153,28 @@
 	<p>A company has determined the demand curve for their product is \( q=\sqrt{5000-p^2} \), where \(p\) is the price in dollars, and \(q\) is the quantity in millions. If weather conditions are driving the price up $2 a week, find the rate at which demand is changing when the price is $40.</p>
 	<p>The quantities changing are \(p\) and \(q\), and we assume they are both functions of time, \(t\), in weeks. We already have an equation relating the quantities, so we can implicitly differentiate it.
 	\[ \begin{align*}
-		\frac{d}{dt}(q)=&amp; \frac{d}{dt}\left(5000-p^2\right)^{1/2} \\
-		\frac{dq}{dt}=&amp; \frac{1}{2}\left(5000-p^2\right)^{-1/2}\frac{d}{dt}\left(5000-p^2\right) \\
-		\frac{dq}{dt}=&amp; \frac{1}{2}\left(5000-p^2\right)^{-1/2}\left(-2p\frac{dp}{dt}\right)
+		\frac{d}{dt}(q) &amp; =  \frac{d}{dt}\left(5000-p^2\right)^{1/2} \\
+		\frac{dq}{dt} &amp; =  \frac{1}{2}\left(5000-p^2\right)^{-1/2}\frac{d}{dt}\left(5000-p^2\right) \\
+		\frac{dq}{dt} &amp; =  \frac{1}{2}\left(5000-p^2\right)^{-1/2}\left(-2p\frac{dp}{dt}\right)
 	\end{align*} \]
 	</p>
 	<p>Using the given information, we know the price is increasing by $2 per week when the price is $40, giving \( \frac{dp}{dt}=2 \) when \(p = 40\). Plugging in these values, \[ \frac{dq}{dt} = \frac{1}{2}\left(5000-40^2\right)^{-1/2}\left(-2(40)(2)\right) \approx -1.37 \]</p>
 	<p>Demand is falling by 1.37 million items per week.</p>
+</div>
+
+<div class="example">
+	<h4>Example 5</h4>
+	<p>The total daily cost for producing \(x\) items in a day is \(TC(x) = 300,000 + 4x + \frac{200,000}{x}.  If production has been ramping up by 20 items a day, find the rate at which total daily cost is increasing, if they are currently producing 2,000 items.</p>
+	<p>The quantities changing are \(x\) and \(TC\), and we assume they are both functions of time, \(t\), in days. We already have an equation relating the quantities, so we can implicitly differentiate it.
+	\[ \begin{align*}
+		\frac{d}{dt}(TC) &amp; =  \frac{d}{dt}\left(300,000 + 4x + 200,000x^{-1}\right) \\
+		\frac{d TC}{dt} &amp; =  4\frac{dx}{dt} - 200,000x^(-2)\frac{dx}{dt}\\
+		\frac{d TC}{dt} &amp; =  \left(4 - \frac{200,000}{5000^2}\right)\frac{dx}{dt}\\
+	\end{align*} \]
+	</p>
+	<p>We know the quantity produced is increasing by 20 items per week when the production is 2,000 items, giving \( \frac{dx}{dt}=20 \) when \(x = 2000\). Plugging in these values, 
+	\[ \frac{d TC}{dt} =  \left(4 - \frac{200,000}{2000^2}\right)(20) = 79 \]</p>
+	<p>Total daily cost is increasing by $79 each day.</p>
 </div>
 
 <div class="videoplayer w639">

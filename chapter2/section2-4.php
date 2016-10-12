@@ -19,9 +19,9 @@
 	<p>Find the derivative of \( h(x)=\left(4x^3-11\right)(x+3) \)</p>
 	<p>This function is not a simple sum or difference of polynomials. It’s a product of polynomials. We can simply multiply it out to find its derivative:
 	\[ \begin{align*}
-		h(x)=&amp; \left(4x^3-11\right)(x+3)\\
-		=&amp; 4x^4-11x+12x^3-33\\
-		h'(x)=&amp; 16x^3-11+36x^2
+		h(x) &amp; =  \left(4x^3-11\right)(x+3)\\
+		 &amp; =  4x^4-11x+12x^3-33\\
+		h'(x) &amp; =  16x^3-11+36x^2
 	\end{align*} \]
 	</p>
 </div>
@@ -69,15 +69,15 @@
 	<p>Notice we can think of \(h(x)\) as the product of two functions \( f(x)=4x^3-11 \) and \( g(x)=x+3 \). Finding the derivative of each of these, \[ f'(x)=12x^2 \ \text{and}\ g'(x)=1. \]</p>
 	<p>Using the product rule,
 	\[ \begin{align*}
-		h'(x)=&amp; (f')(g)+(f)(g') \\
-		=&amp; \left(12x^2\right)(x+3)+\left(4x^3-11\right)(1)
+		h'(x) &amp; =  (f')(g)+(f)(g') \\
+		 &amp; =  \left(12x^2\right)(x+3)+\left(4x^3-11\right)(1)
 	\end{align*} \]
 	</p>
 	<p>To check if this is equivalent to the answer we found in Example 1 we could simplify:
 	\[ \begin{align*}
-		h'(x)=&amp; \left(12x^2\right)(x+3)+\left(4x^3-11\right)(1) \\
-		=&amp; 12x^3+36x^2+4x^3-11 \\
-		=&amp; 16x^3+36x^2-11
+		h'(x) &amp; =  \left(12x^2\right)(x+3)+\left(4x^3-11\right)(1) \\
+		 &amp; =  12x^3+36x^2+4x^3-11 \\
+		 &amp; =  16x^3+36x^2-11
 	\end{align*} \]
 	</p>
 	<p>From this, we can see the answers are equivalent.</p>
@@ -96,7 +96,11 @@
 	<h4>Example 4</h4>
 	<p>Find the derivative of \( y=\frac{x^4+4^x}{3+16x^3} \).</p>
 	<p>This is a quotient, so we need to use the quotient rule. Again, you find it helpful to put down the empty parentheses as a template: \[y'=\frac{(\ )(\ )-(\ )(\ )}{(\ )^2}\]</p>
-	<p>Then fill in all the pieces: \[y'=\frac{\left(4x^3+\ln(4)\cdot 4^x \right)\left(3+16x^3 \right)-\left(x^4+4^x \right)\left(48x^2 \right)}{\left(3+16x^3 \right)^2}\]</p>
+	<p>We can find the derivative of the numerator and denominator separately:</p>
+	<p>For the numerator: \(f(x) = x^4 + 4^x\) so \(f'(x) = 4x^3 + \ln(4)\cdot 4^x\)</p>
+	<p>For the denominator: \(g(x) = 3+16x^3\) so \(g'(x) = 48x^2\)</p>
+	<p>Then fill in all the pieces: \[y'=\frac{f'\cdot g-f\cdot g'}{g^2}\]</p>
+	<p>\[y'=\frac{\left(4x^3+\ln(4)\cdot 4^x \right)\left(3+16x^3 \right)-\left(x^4+4^x \right)\left(48x^2 \right)}{\left(3+16x^3 \right)^2}\]</p>
 </div>
 
 <p>Now for goodness' sake don’t try to simplify that! Remember that <q>simple</q> depends on what you will do next; in this case, we were asked to find the derivative, and we’ve done that. I expect you to do any <q>basic</q> simplifications, such as multiplying constants together or doing obvious cancellations or combining of terms, but otherwise please STOP unless there is a reason to simplify further.</p>
@@ -115,9 +119,9 @@
 	<p>First we need to set up a model for the concentration of chemical. The concentration would be measured as kg of chemical per liter of water, kg/L. The number of kg of chemical stays constant at 8 kg, but the quantity of water in the tank is increasing by 5 L/min. The total volume of water in the tank after \(t\) minutes is \(50 + 5t\), so the concentration after \(t\) minutes is \[c(t)=\frac{8}{50+5t}.\]</p>
 	<p>To find the rate at which the concentration is changing, we need the derivative:
 		\[ \begin{align*}
-			c'(t)=&amp; \frac{\frac{d}{dt}(8)\cdot(50+5t)-(8)\cdot\frac{d}{dt}(50+5t)}{(50+5t)^2} \\
-			=&amp; \frac{(0)\cdot(50+5t)-(8)(5)}{(50+5t)^2} \\
-			=&amp; -\frac{40}{(50+5t)^2}
+			c'(t) &amp; =  \frac{\frac{d}{dt}(8)\cdot(50+5t)-(8)\cdot\frac{d}{dt}(50+5t)}{(50+5t)^2} \\
+			 &amp; =  \frac{(0)\cdot(50+5t)-(8)(5)}{(50+5t)^2} \\
+			 &amp; =  -\frac{40}{(50+5t)^2}
 		\end{align*} \]
 	</p>
 	<p>At \(t = 4\), \[ c'(4)=-\frac{40}{(50+5(4))^2}\approx -0.00816.\]</p>
@@ -159,10 +163,10 @@
 		<li>
 			<p>For the marginal average cost, we need to find the derivative of the average cost function. We can either calculate this using the quotient rule, or we could use algebra to simplify the equation first (this is the easier option &ndash; remember, simplifying before differentiating is almost always easier): 
 				\[ \begin{align*}
-					AC(x)=&amp; \frac{22+x-0.004x^2}{x} \\
-					=&amp; \frac{22}{x}+\frac{x}{x}-\frac{0.004x^2}{x} \\
-					=&amp; \frac{22}{x}+1-0.004x \\
-					=&amp; 22x^{-1}+1-0.004x
+					AC(x) &amp; =  \frac{22+x-0.004x^2}{x} \\
+					 &amp; =  \frac{22}{x}+\frac{x}{x}-\frac{0.004x^2}{x} \\
+					 &amp; =  \frac{22}{x}+1-0.004x \\
+					 &amp; =  22x^{-1}+1-0.004x
 				\end{align*} \]
 			(Note: we haven't differentiated yet, only simplified.)</p>
 			<p>Taking the derivative, \[ AC'(x)=-22x^{-2}-0.004=-\frac{22}{x^2}-0.004.\]</p>

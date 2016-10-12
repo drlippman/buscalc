@@ -116,15 +116,15 @@
 	<p>Writing the area as a sum of definite integrals, we get \[ \text{Area }= \int_1^3 (3-x)\, dx+\int_3^4 (x-3)\, dx.\]</p>
 	<p>These integrals are easy to evaluate using antiderivatives:
 		\[ \begin{align*}
-			\int_1^3 (3-x)\, dx=&amp; \left[3x-\frac{x^2}{2}\right]_1^3 \\
-			=&amp; \left(9-\frac{9}{2}\right)-\left(15-\frac{25}{2}\right) \\
-			=&amp; 2
+			\int_1^3 (3-x)\, dx &amp; =  \left[3x-\frac{x^2}{2}\right]_1^3 \\
+			 &amp; =  \left(9-\frac{9}{2}\right)-\left(15-\frac{25}{2}\right) \\
+			 &amp; =  2
 		\end{align*} \]
 
 		\[ \begin{align*}
-			\int_3^4 (x-3)\, dx=&amp; \left[\frac{x^2}{2}-3x\right]_3^4 \\
-			=&amp; \left(\frac{16}{2}-12\right)-\left(\frac{9}{2}-9\right) \\
-			=&amp; \frac{1}{2}
+			\int_3^4 (x-3)\, dx &amp; =  \left[\frac{x^2}{2}-3x\right]_3^4 \\
+			 &amp; =  \left(\frac{16}{2}-12\right)-\left(\frac{9}{2}-9\right) \\
+			 &amp; =  \frac{1}{2}
 		\end{align*} \]
 	</p>
 	<p>The sum of these two integrals tells us that the total area between \(f\) and \(g\) is 2.5 square units, which we already knew from the picture.</p>
@@ -149,11 +149,11 @@
 	<p>Since \( v_A(t) \geq v_B(t) \) , the <q>area</q> between the graphs of \( v_A \) and \( v_B \) represents the distance between the objects.</p>
 	<p>After 3 seconds, the distance apart is 
 		\[ \begin{align*}
-			\int_0^3 \left( v_A(t) - v_B(t) \right)\, dt=&amp; \int_0^3 \left( (t+3) - \left( t^2-4t+3 \right) \right)\, dt \\
-			=&amp; \int_0^3 \left(5t-t^2\right)\, dt \\
-			=&amp; \left[ 5\frac{t^2}{2} -\frac{t^3}{3} \right]_0^3 \\
-			=&amp; \left( 5\frac{9}{2}-\frac{27}{3}\right)-(0) \\
-			=&amp; 13.5 \text{ meters}.
+			\int_0^3 \left( v_A(t) - v_B(t) \right)\, dt &amp; =  \int_0^3 \left( (t+3) - \left( t^2-4t+3 \right) \right)\, dt \\
+			 &amp; =  \int_0^3 \left(5t-t^2\right)\, dt \\
+			 &amp; =  \left[ 5\frac{t^2}{2} -\frac{t^3}{3} \right]_0^3 \\
+			 &amp; =  \left( 5\frac{9}{2}-\frac{27}{3}\right)-(0) \\
+			 &amp; =  13.5 \text{ meters}.
 		\end{align*} \]
 	</p>
 </div>
@@ -199,9 +199,9 @@
 	<p>Using exponent rules, the integrand can be simplified. The constant \( \pi \) can be pulled out of the integral: \[ \text{Volume} = \pi\int_0^1 e^{-2x}\, dx. \]</p>
 	<p>Using the substitution \(u = -2x\), we can integrate this function.
 		\[ \begin{align*}
-			 \pi\int_0^1 e^{-2x}\, dx=&amp; \text{(\( u \)-substitution)} \\
-			 =&amp; \left. -\frac{1}{2}\pi e^{-2x}\right]_0^1 \\
-			=&amp; \left(-\frac{1}{2}\pi e^{-2(1)}\right) - \left(-\frac{1}{2}\pi e^{-2(0)}\right) \\
+			 \pi\int_0^1 e^{-2x}\, dx &amp; =  \text{(\( u \)-substitution)} \\
+			  &amp; =  \left. -\frac{1}{2}\pi e^{-2x}\right]_0^1 \\
+			 &amp; =  \left(-\frac{1}{2}\pi e^{-2(1)}\right) - \left(-\frac{1}{2}\pi e^{-2(0)}\right) \\
 			\approx &amp; 1.358\text{ cubic units}.
 		\end{align*} \]
 </p>

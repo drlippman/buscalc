@@ -93,13 +93,13 @@
 	
 	<p>Since we want tax revenue as a function of the year, we want year to be our initial input, and revenue to be our final output. To find revenue, we will first have to predict the city population, and then use that result as the input to the tax function. So we need to find \(R(p(t)).\) Evaluating this, 
 	\[\begin{align*}
-		R(p(t)) =&amp; R(60+2t+0.3t^2)\\
-		=&amp; 0.03(60+2t+0.3t^2)+\sqrt{60+2t+0.3t^2}
+		R(p(t))  &amp; =  R(60+2t+0.3t^2)\\
+		 &amp; =  0.03(60+2t+0.3t^2)+\sqrt{60+2t+0.3t^2}
 	\end{align*}\]</p>
 	
 	<p>This composition gives us a single formula which can be used to predict the tax revenue during a given year, without needing to find the intermediary population value. For example, to predict the tax revenue in 2017, when t = 7 (because t is measured in years after 2010),
 	\[\begin{align*}
-		R(p(7)) =&amp; 0.03\left(60+2(7)+0.3\left(7^2\right)\right)+\sqrt{60+2(7)+0.3\left(7^2\right)}\\
+		R(p(7))  &amp; =  0.03\left(60+2(7)+0.3\left(7^2\right)\right)+\sqrt{60+2(7)+0.3\left(7^2\right)}\\
 		\approx &amp; 12.079\text{ million dollars}
 	\end{align*}\]</p>
 </div>

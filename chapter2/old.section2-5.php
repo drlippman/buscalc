@@ -72,12 +72,12 @@
 	<p>Using our function \( f(x)=x^2 \), \( f(x+h)=(x+h)^2=x^2+2xh+h^2 \).</p>
 	<p>Then
 		\[ \begin{align*}
-			f'(x)=&amp; \lim\limits_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{x^2+2xh+h^2-x^2}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{2xh+h^2}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{h(2x+h)}{h}\\
-			=&amp; \lim\limits_{h\to 0} (2x+h)\\
-			=&amp; 2x
+			f'(x) &amp; =  \lim\limits_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{x^2+2xh+h^2-x^2}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{2xh+h^2}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{h(2x+h)}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} (2x+h)\\
+			 &amp; =  2x
 		\end{align*} \]
 	</p>
 	<p>From all that, we find that \( f'(x)=2x \).</p>
@@ -171,10 +171,10 @@
 	<h4>Example 5</h4>
 	<p>Find the derivative of \( p(x)=17x^{10}+13x^8-1.8x+1003 \).</p>
 	<p>\[ \begin{align*}
-		\frac{d}{dx}\left( 17x^{10}+13x^8-1.8x+1003 \right)=&amp; \frac{d}{dx}\left( 17x^{10} \right)+\frac{d}{dx}\left( 13x^8 \right)-\frac{d}{dx}\left( 1.8x \right)+\frac{d}{dx}\left( 1003 \right)\\
-		=&amp; 17\frac{d}{dx}\left( x^{10} \right)+13\frac{d}{dx}\left( x^8 \right)-1.8\frac{d}{dx}\left( x \right)+\frac{d}{dx}\left( 1003 \right)\\
-		=&amp; 17\left(10x^9\right)+13\left(8x^7\right)-1.8\left(1\right)+0\\
-		=&amp; 170x^9+104x^7-1.8
+		\frac{d}{dx}\left( 17x^{10}+13x^8-1.8x+1003 \right) &amp; =  \frac{d}{dx}\left( 17x^{10} \right)+\frac{d}{dx}\left( 13x^8 \right)-\frac{d}{dx}\left( 1.8x \right)+\frac{d}{dx}\left( 1003 \right)\\
+		 &amp; =  17\frac{d}{dx}\left( x^{10} \right)+13\frac{d}{dx}\left( x^8 \right)-1.8\frac{d}{dx}\left( x \right)+\frac{d}{dx}\left( 1003 \right)\\
+		 &amp; =  17\left(10x^9\right)+13\left(8x^7\right)-1.8\left(1\right)+0\\
+		 &amp; =  170x^9+104x^7-1.8
 	\end{align*} \]</p>
 </div>
 
@@ -195,8 +195,8 @@
 	<p>The first step is translate into exponents: \[y=3\sqrt{t}-\frac{4}{t^4}+5e^t=3t^{1/2}-4t^{-4}+5e^t\]</p>
 	<p>Now you can take the derivative:
 	\[ \begin{align*}
-		\frac{d}{dt}\left( 3t^{1/2}-4t^{-4}+5e^t \right)=&amp; 3\left(\frac{1}{2}t^{-1/2}\right)-4\left(-4t^{-5}\right)+5\left(e^t\right) \\
-		=&amp; \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t
+		\frac{d}{dt}\left( 3t^{1/2}-4t^{-4}+5e^t \right) &amp; =  3\left(\frac{1}{2}t^{-1/2}\right)-4\left(-4t^{-5}\right)+5\left(e^t\right) \\
+		 &amp; =  \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t
 		\end{align*} \]
 	</p>
 	<p>If there is a reason to, you can rewrite the answer with radicals and positive exponents: \[y'= \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t= \frac{3}{2\sqrt{t}}+\frac{16}{t^5}+5e^t\]</p>
@@ -248,9 +248,9 @@
 	<p>Find the derivative of \( g(x)=\left(4x^3-11\right)(x+3) \)</p>
 	<p>This function is not a simple sum or difference of polynomials. It’s a product of polynomials. We can simply multiply it out to find its derivative:
 	\[ \begin{align*}
-		g(x)=&amp; \left(4x^3-11\right)(x+3)\\
-		=&amp; 4x^4-11x+12x^3-33\\
-		g'(x)=&amp; 16x^3-11+36x^2
+		g(x) &amp; =  \left(4x^3-11\right)(x+3)\\
+		 &amp; =  4x^4-11x+12x^3-33\\
+		g'(x) &amp; =  16x^3-11+36x^2
 	\end{align*} \]
 	</p>
 </div>
@@ -327,9 +327,9 @@
 	<p>Find the derivative of \( y=\left(4x^3+15x\right)^2 \)</p>
 	<p>This is not a simple polynomial, so we can’t use the basic building block rules yet. It is a product, so we could write it as \(y=\left(4x^3+15x\right)^2=\left(4x^3+15x\right)\left(4x^3+15x\right)\) and use the product rule. Or we could multiply it out and simply differentiate the resulting polynomial. I’ll do it the second way:
 	\[ \begin{align*}
-		y=&amp; \left(4x^3+15x\right)^2\\
-		=&amp; 16x^6+120x^4+225x^2\\
-		y'=&amp; 64x^5+480x^3+450x
+		y &amp; =  \left(4x^3+15x\right)^2\\
+		 &amp; =  16x^6+120x^4+225x^2\\
+		y' &amp; =  64x^5+480x^3+450x
 	\end{align*} \]
 	</p>
 </div>
@@ -449,10 +449,10 @@
 	</table>
 	<p>
 	\[ \begin{align*}
-		(f\circ g)(-1)=&amp; f\left(g(-1)\right)=f(3)=0\\
-		(f\circ g)(0)=&amp; f\left(g(0)\right)=f(1)=1\\
-		(f\circ g)'(-1)=&amp; f'\left(g(-1)\right)\cdot g'(-1)=f'(3)\cdot (0)=(2)(0)=0 \text{ and}\\
-		(f\circ g)'(0)=&amp; f'\left(g(0)\right)\cdot g'(0)=f'(1)\cdot (2)=(-1)(2)=-2
+		(f\circ g)(-1) &amp; =  f\left(g(-1)\right)=f(3)=0\\
+		(f\circ g)(0) &amp; =  f\left(g(0)\right)=f(1)=1\\
+		(f\circ g)'(-1) &amp; =  f'\left(g(-1)\right)\cdot g'(-1)=f'(3)\cdot (0)=(2)(0)=0 \text{ and}\\
+		(f\circ g)'(0) &amp; =  f'\left(g(0)\right)\cdot g'(0)=f'(1)\cdot (2)=(-1)(2)=-2
 	\end{align*} \]
 	</p>
 </div>

@@ -69,8 +69,8 @@
 	<p>Now we can multiply both sides by \(dx\) and by \(2y\) to separate the variables: \[ 2y\, dy=(6x+1)\, dx</p>
 	<p>Integrating each side, we have
 		\[ \begin{align*}
-			\int 2y\, dy=&amp; \int (6x+1)\, dx \\
-			y^2+C_1=&amp; 3x^2+x+C_2
+			\int 2y\, dy &amp; =  \int (6x+1)\, dx \\
+			y^2+C_1 &amp; =  3x^2+x+C_2
 		\end{align*} \]
 	</p>
 	<p>Notice that we can combine the two constants to create a new, consolidated constant \(C\), so we usually only bother to put a constant on the right side: \[ y^2=3x^2+x+C. \]</p>
@@ -98,32 +98,32 @@
 	<p>We can separate this equation by multiply by \(dt\) and dividing by the entire expression on the right: \[ \frac{dB}{0.02B-20}=dt. \]</p>
 	<p>Integrating the left side of this equation requires substitution.  Let \( u=0.02B-20 \), so  \( du=0.02\, dB \).  Making the substitution,
 		\[ \begin{align*}
-			\int\frac{dB}{0.02B-20}=&amp; \int\frac{du/0.02}{u} \\
-			=&amp; \int\frac{1}{u}\frac{du}{0.02} \\
-			=&amp; \frac{1}{0.02}\int\frac{1}{u}\, du \\
-			=&amp;  \frac{1}{0.02}\ln|u|+C_1\\
-			=&amp;  \frac{1}{0.02}\ln|0.02B-20|+C_1
+			\int\frac{dB}{0.02B-20} &amp; =  \int\frac{du/0.02}{u} \\
+			 &amp; =  \int\frac{1}{u}\frac{du}{0.02} \\
+			 &amp; =  \frac{1}{0.02}\int\frac{1}{u}\, du \\
+			 &amp; =   \frac{1}{0.02}\ln|u|+C_1\\
+			 &amp; =   \frac{1}{0.02}\ln|0.02B-20|+C_1
 		\end{align*} \]
 	</p>
 	<p>Integrating on the right side of the differential equation is easier: \[\int dt = t+C_2\]</p>
 	<p>Together, this gives us the general solution to the differential equation (we're also combining the \( C \)'s in this step): \[ \frac{1}{0.02}\ln|0.02B-20|=t+C \]</p>
 	<p>Now we would like to solve for \(B\).  Start by multiplying by 0.02.
 		\[ \begin{align*}
-			\ln|0.02B-20|=&amp; 0.02t+0.02C &amp;\\
-			\ln|0.02B-20|=&amp; 0.02t+D &amp;\qquad\text{We can rename \( D=0.02C \) for simplicity.}\\
-			e^{\ln|0.02B-20|}=&amp; e^{0.02t+D} &amp;\qquad\text{Exponentiate both sides: \( e^{\text{left}}=e^{\text{right}} \).}\\
-			|0.02B-20|=&amp; e^{0.02t+D} &amp;\qquad\text{Use the log rule \( e^{\ln(A)}=A \).}\\
-			0.02B-20=&amp; e^{0.02t+D} &amp;\qquad\text{Since the RHS is always positive, we can drop the abs value.}\\
-			0.02B-20=&amp; e^{0.02t}e^D &amp;\qquad\text{Using the rule \( e^{A+B}=e^Ae^B \).}\\
-			0.02B-20=&amp; ke^{0.02t} &amp;\qquad\text{Rename \( k=e^D \).}\\
-			B=&amp; \frac{ke^{0.02t}+20}{0.02}=\frac{ke^{0.02t}}{0.02}+1000 &amp;\qquad\text{Add 20 and divide by 0.02.}\\
-			B=&amp; Ae^{0.02t}+1000 &amp;\qquad\text{Rename \( A=\frac{k}{0.02} \).}
+			\ln|0.02B-20| &amp; =  0.02t+0.02C &amp;\\
+			\ln|0.02B-20| &amp; =  0.02t+D &amp;\qquad\text{We can rename \( D=0.02C \) for simplicity.}\\
+			e^{\ln|0.02B-20|} &amp; =  e^{0.02t+D} &amp;\qquad\text{Exponentiate both sides: \( e^{\text{left}}=e^{\text{right}} \).}\\
+			|0.02B-20| &amp; =  e^{0.02t+D} &amp;\qquad\text{Use the log rule \( e^{\ln(A)}=A \).}\\
+			0.02B-20 &amp; =  e^{0.02t+D} &amp;\qquad\text{Since the RHS is always positive, we can drop the abs value.}\\
+			0.02B-20 &amp; =  e^{0.02t}e^D &amp;\qquad\text{Using the rule \( e^{A+B}=e^Ae^B \).}\\
+			0.02B-20 &amp; =  ke^{0.02t} &amp;\qquad\text{Rename \( k=e^D \).}\\
+			B &amp; =  \frac{ke^{0.02t}+20}{0.02}=\frac{ke^{0.02t}}{0.02}+1000 &amp;\qquad\text{Add 20 and divide by 0.02.}\\
+			B &amp; =  Ae^{0.02t}+1000 &amp;\qquad\text{Rename \( A=\frac{k}{0.02} \).}
 		\end{align*} \]
 	</p>
 	<p>Finally, we can substitute our initial value of \(B = 3000\) when \(t = 0\) to solve for the constant \(A\):
 		\[ \begin{align*}
-			3000=&amp; Ae^{0.02(0)}+1000 \\
-			A=&amp; 2000
+			3000 &amp; =  Ae^{0.02(0)}+1000 \\
+			A &amp; =  2000
 		\end{align*} \]
 	</p>
 	<p>This gives us the equation for the account balance after \(t\) years: \[ B(t)=2000e^{0.02t}+1000. \]</p>
@@ -148,11 +148,11 @@
 	<p>A population grows by 8% each year.  If the current population is 5,000, find an equation for the population after \(t\) years.</p>
 	<p>
 		\[ \begin{align*}
-			\frac{dy}{dt}=&amp; 0.08y &amp;\\
-			\frac{1}{y}\, dy=&amp; 0.08\, dt &amp;\qquad\text{Separate the variables.}\\
-			\ln|y|=&amp; 0.08t+C &amp;\qquad\text{Integrate both sides.}\\
-			e^{\ln|y|}=&amp; e^{0.08t+C} &amp;\qquad\text{Exponentiate both sides.}\\
-			y=&amp; Ae^{0.08t} &amp;\qquad\text{Simplify both sides, using the tricks we used in the bank example.}
+			\frac{dy}{dt} &amp; =  0.08y &amp;\\
+			\frac{1}{y}\, dy &amp; =  0.08\, dt &amp;\qquad\text{Separate the variables.}\\
+			\ln|y| &amp; =  0.08t+C &amp;\qquad\text{Integrate both sides.}\\
+			e^{\ln|y|} &amp; =  e^{0.08t+C} &amp;\qquad\text{Exponentiate both sides.}\\
+			y &amp; =  Ae^{0.08t} &amp;\qquad\text{Simplify both sides, using the tricks we used in the bank example.}
 		\end{align*} \]
 	</p>
 	<p>Now substitute in the initial condition: \( 5000=Ae^{0.08(0)} \), so \( A=5000 \).</p>
@@ -175,21 +175,21 @@
 	<p>Since it was a new phone,  \( y(0)=0 \).  We also know the sales after one month,  \( y(1)=20 \).</p>
 	<p>Solving the differential equation:
 		\[ \begin{align*}
-			\frac{dy}{dt}=&amp; k(200-y) &amp;\\
-			\frac{dy}{200-y}=&amp; k\, dt &amp;\qquad\text{Separate the variables.}\\
-			-\ln|200-y|=&amp; kt+C &amp;\qquad\text{Integrate both sides. On the left use the substitution.}\\
-			e^{\ln|200-y|}=&amp; e^{-kt+C} &amp;\qquad\text{Multiply both sides by -1, and exponentiate both sides.}\\
-			200-y=&amp; Be^{-kt} &amp;\qquad\text{Simplify.}\\
-			y=&amp; Ae^{-kt}+200 &amp;\qquad\text{Subtract 200, divide by -1, and simplify.}
+			\frac{dy}{dt} &amp; =  k(200-y) &amp;\\
+			\frac{dy}{200-y} &amp; =  k\, dt &amp;\qquad\text{Separate the variables.}\\
+			-\ln|200-y| &amp; =  kt+C &amp;\qquad\text{Integrate both sides. On the left use the substitution.}\\
+			e^{\ln|200-y|} &amp; =  e^{-kt+C} &amp;\qquad\text{Multiply both sides by -1, and exponentiate both sides.}\\
+			200-y &amp; =  Be^{-kt} &amp;\qquad\text{Simplify.}\\
+			y &amp; =  Ae^{-kt}+200 &amp;\qquad\text{Subtract 200, divide by -1, and simplify.}
 		\end{align*} \]
 	</p>
 	<p>Using the initial condition \( y(0)=0 \), \[ 0=Ae^{-k(0)}+200, \] so \( 0=A+200 \), giving \( A=-200 \).</p>
 	<p>Using the value \( y(1)=20 \):
 		\[ \begin{align*}
-			20=&amp; -200e^{-k(t)}+200 &amp;\\
-			\frac{=180}{-200}=&amp; 0.9=e^{-k} &amp;\qquad\text{Subtract 200 and divide -200.}\\
-			\ln(0.9)=&amp; \ln\left(e^{-k}\right)=-k &amp;\qquad\text{Take the ln of both sides.}\\
-			k=&amp; -\ln(0.9)\approx 0.105 &amp;\qquad\text{Divide by -1.}
+			20 &amp; =  -200e^{-k(t)}+200 &amp;\\
+			\frac{=180}{-200} &amp; =  0.9=e^{-k} &amp;\qquad\text{Subtract 200 and divide -200.}\\
+			\ln(0.9) &amp; =  \ln\left(e^{-k}\right)=-k &amp;\qquad\text{Take the ln of both sides.}\\
+			k &amp; =  -\ln(0.9)\approx 0.105 &amp;\qquad\text{Divide by -1.}
 		\end{align*} \]
 	</p>
 	<p>As a quick sanity check, this value is positive as we would expect, indicating that the sales are growing over time.  We now have the equation for the sales of phones over time: \[ A=-200e^{-0.105t}+200. \]</p>
@@ -212,30 +212,30 @@
 	<p>A colony of 100 rabbits is introduced to a reclaimed forest.  After 1 year, the population has grown to 300.  It is estimated the forest can sustain 5000 rabbits.  The forest service plans to reintroduce wolves to the forest when the rabbit population reaches 3000 rabbits.  When will that occur?</p>
 	<p>The maximum sustainable population was given as \(M = 5000\).  Using the solution form \[ y=\frac{M}{1+Ae^{-rt}} \] and the initial condition \( y(0)=100 \) we can solve for \( A \):
 		\[ \begin{align*}
-			100=&amp; \frac{5000}{1+Ae^{-r(0)}} &amp;\\
-			100=&amp; \frac{5000}{1+A} &amp;\qquad\text{Simplify.}\\
-			100(1+A)=&amp; 5000 &amp;\qquad\text{Multiply both sides by \( 1+A \).}\\
-			1+A=&amp; 50 &amp;\qquad\text{Divide by 100.}\\
-			A=&amp; 49 &amp;
+			100 &amp; =  \frac{5000}{1+Ae^{-r(0)}} &amp;\\
+			100 &amp; =  \frac{5000}{1+A} &amp;\qquad\text{Simplify.}\\
+			100(1+A) &amp; =  5000 &amp;\qquad\text{Multiply both sides by \( 1+A \).}\\
+			1+A &amp; =  50 &amp;\qquad\text{Divide by 100.}\\
+			A &amp; =  49 &amp;
 		\end{align*} \]	
 	</p>
 	<p>Now, using  \( y(1)=300 \), we can solve for \(r\):
 		\[ \begin{align*}
-			300=&amp; \frac{5000}{1+49e^{-r(1)}} \\
-			300\left(1+49e^{-r}\right)=&amp; 5000 \\
-			1+49e^{-r}=&amp; \frac{5000}{300} \\
-			e^{-r}=&amp; \frac{\frac{50}{3}-1}{49}\approx 0.3197 \\
-			-r=&amp; \ln(0.3197) \\
-			r=&amp; -\ln(0.3197)\approx 1.1404
+			300 &amp; =  \frac{5000}{1+49e^{-r(1)}} \\
+			300\left(1+49e^{-r}\right) &amp; =  5000 \\
+			1+49e^{-r} &amp; =  \frac{5000}{300} \\
+			e^{-r} &amp; =  \frac{\frac{50}{3}-1}{49}\approx 0.3197 \\
+			-r &amp; =  \ln(0.3197) \\
+			r &amp; =  -\ln(0.3197)\approx 1.1404
 		\end{align*} \]
 	</p>
 	<p>We now have the equation for the population after \(t\) years: \[ y=\frac{5000}{1+49e^{-1.1404t}}. \]</p>
 	<p>To answer the original equation, of when the rabbit population will reach 3000, we need to solve for \(t\) when \(y = 3000\):
 		\[ \begin{align*}
-			3000=&amp; \frac{5000}{1+49e^{-1.1404t}} \\
-			3000\left(1+49e^{-1.1404t}\right)=&amp; 5000 \\
-			e^{-1.1404t}=&amp; \frac{\frac{5}{3}-1}{49}\approx 0.01361 \\
-			t=&amp; \frac{\ln(0.01361)}{-1.1404}\approx 3.77\text{ years}.
+			3000 &amp; =  \frac{5000}{1+49e^{-1.1404t}} \\
+			3000\left(1+49e^{-1.1404t}\right) &amp; =  5000 \\
+			e^{-1.1404t} &amp; =  \frac{\frac{5}{3}-1}{49}\approx 0.01361 \\
+			t &amp; =  \frac{\ln(0.01361)}{-1.1404}\approx 3.77\text{ years}.
 		\end{align*} \]
 	</p>
 </div>

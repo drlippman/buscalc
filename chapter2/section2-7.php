@@ -250,9 +250,9 @@ This confirms what we saw before in the graph.</p>
 	<p>\(f(x) = 2x^3 - 15x^2 + 24x - 7\)  has critical numbers  \(x =\) 1 and 4.  Use the Second Derivative Test for Extremes to determine whether  \(f(1)\)  and  \(f(4)\)  are maximums or minimums or neither.</p>
 	<p>We need to find the second derivative:
 	\[ \begin{align*}
-		f(x)=&amp; 2x^3 - 15x^2 + 24x - 7\\
-		f'(x)=&amp; 6x^2 - 30x + 24\\
-		f''(x)=&amp; 12x - 30
+		f(x) &amp; =  2x^3 - 15x^2 + 24x - 7\\
+		f'(x) &amp; =  6x^2 - 30x + 24\\
+		f''(x) &amp; =  12x - 30
 	\end{align*} \]
 	</p>
 	<p>Then we just need to evaluate \(f''\) at each critical number:</p>
@@ -316,6 +316,16 @@ This confirms what we saw before in the graph.</p>
 
 <p>How do we decide if endpoints are global max or min?  It’s easier than you expected &ndash; simply plug in the endpoints, along with all the critical numbers, and compare \(y\)-values.</p>
 
+<div class="important">
+	<h4>To find Global Extremes</h4>
+	<p>The only places where a function can have a global extreme are critical points or endpoints.</p>
+	<ul>
+		<li>If the function has only one critical point, and it's a local extreme, then it is also the global extreme.</li>
+		<li>If there are endpoints, find the global extremes by comparing \(y\)-values at all the critical points and at the endpoints.</li>
+		<li>When in doubt, graph the function to be sure. (However, unless the problem explicitly tells you otherwise, it is <strong>not</strong> enough to just use the graph to get your answer.)</li>
+	</ul>
+</div>
+
 <div class="example">
 	<h4>Example 6</h4>
 	<p>Find the global max and min of  \(f(x) = x^3 - 3x^2 - 9x + 5\)  for  \(-2 \leq x \leq 6\).</p>
@@ -348,6 +358,12 @@ This confirms what we saw before in the graph.</p>
 	<p>The global minimum of  \(f\)  on  \([ -2, 6]\)  is  -22,  when  \(x = 3\), and the global maximum of  \(f\)  on  \([ -2, 6]\)  is  59,  when \(x = 6\).</p>
 </div>
 
+<div class="important">
+	<h4>Caution</h4>
+	<p>Be careful!  You can <strong>only</strong> use this technique (evaluating the function at endpoints and critical values) to determine <strong>global</strong> extrema.  If a question 
+	asks for <strong>local</strong> extrema, you <strong>must</strong> use the first or second derivative test described earlier in the section</p>
+</div>
+
 <div class="videoplayer w639">
 	<video id="video_2.7.9" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
 		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-7/global_extrema_example_x2_over_x_plus_2_cont_over_closed_int.mp4" type='video/mp4' />
@@ -371,15 +387,7 @@ This confirms what we saw before in the graph.</p>
 	<figure><img src="images/image058.png" alt="graph"/></figure>
 </div>
 
-<div class="important">
-	<h4>To find Global Extremes</h4>
-	<p>The only places where a function can have a global extreme are critical points or endpoints.</p>
-	<ul>
-		<li>If the function has only one critical point, and it's a local extreme, then it is also the global extreme.</li>
-		<li>If there are endpoints, find the global extremes by comparing \(y\)-values at all the critical points and at the endpoints.</li>
-		<li>When in doubt, graph the function to be sure. (However, unless the problem explicitly tells you otherwise, it is <strong>not</strong> enough to just use the graph to get your answer.)</li>
-	</ul>
-</div>
+
 
 </section>
 

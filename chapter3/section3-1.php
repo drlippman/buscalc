@@ -63,16 +63,16 @@
 	<p>The area of the shaded region represents the total volume (cubic feet or \( \text{ft}^3 \)) of water flowing past the town during the month of October. We can approximate this area to approximate the total water by thinking of the shaded region as a rectangle with a triangle on top.</p>
 	<p>
 	\[ \begin{align*}
-			\text{Total water }=&amp; \text{ total area}\\
+			\text{Total water } &amp; =  \text{ total area}\\
 			\approx&amp; \text{ area of rectangle }+\text{ area of the "triangle"} \\
 			\approx&amp; \left(2000 \frac{\text{ft}^3}{\text{s}}\right)\left(30 \text{ days}\right)+\frac{1}{2}\left(1500\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
-			=&amp; \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right)
+			 &amp; =  \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right)
 		\end{align*} \]
 	</p>
 	<p>Note that we need to convert the units to make sense of our result:
 		\[ \begin{align*}
 			\text{Total water }\approx&amp; \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
-			=&amp; \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(2,\!592,\!000\text{ sec}\right) \\
+			 &amp; =  \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(2,\!592,\!000\text{ sec}\right) \\
 			\approx&amp; 7.128\cdot 10^9\text{ ft}^3
 		\end{align*} \]
 	</p>
@@ -294,9 +294,9 @@
 	<figure><img src="images/image013.png" alt="graph"></figure>
 	<p>The change in population is:
 	\[ \begin{align*}
-		\int\limits_{1980}^{1990} f(t) \,dt=&amp; -(\text{area between \( f \) and axis}) \\
+		\int\limits_{1980}^{1990} f(t) \,dt &amp; =  -(\text{area between \( f \) and axis}) \\
 		\approx&amp; -(200\text{ ducks/year})\cdot (10\text{ years}) \\
-		=&amp; -2000\text{ ducks}
+		 &amp; =  -2000\text{ ducks}
 	\end{align*} \]
 	</p>
 	<p>Then (1990 duck population) = (1980 population) + (change from 1980 to 1990) = (12,000) + ( -2000) = 10,000 ducks.</p>

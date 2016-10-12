@@ -26,15 +26,15 @@
 	<h4>Second Partial Derivatives </h4>
 	<p>Suppose \( f(x,y) \) is a function of two variables.  Then it has four <strong>second partial derivatives</strong>:
 		\[ \begin{align*}
-			f_{xx}=&amp;\frac{\partial}{\partial x}\left(f_x\right)=\left(f_x\right)_x  &amp;  f_{xy}=&amp;\frac{\partial}{\partial y}\left(f_x\right)=\left(f_x\right)_y\\
-			f_{yx}=&amp;\frac{\partial}{\partial x}\left(f_y\right)=\left(f_y\right)_x  &amp;  f_{yy}=&amp;\frac{\partial}{\partial y}\left(f_y\right)=\left(f_y\right)_y
+			f_{xx} &amp; = \frac{\partial}{\partial x}\left(f_x\right)=\left(f_x\right)_x  &amp;  f_{xy} &amp; = \frac{\partial}{\partial y}\left(f_x\right)=\left(f_x\right)_y\\
+			f_{yx} &amp; = \frac{\partial}{\partial x}\left(f_y\right)=\left(f_y\right)_x  &amp;  f_{yy} &amp; = \frac{\partial}{\partial y}\left(f_y\right)=\left(f_y\right)_y
 		\end{align*} \]
 	 \( f_{xy} \) and \( f_{yx} \) are called the <strong>mixed (second) partial derivatives of \(f\)</strong>.
 	</p>
 	<p>Leibniz notation for the second partial derivatives is a bit confusing, and we won't use it as often:
 		\[ \begin{align*}
-			f_{xx}=&amp;\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right)=\frac{\partial^2 f}{\partial x^2}  &amp;  f_{xy}=&amp;\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)=\frac{\partial^2 f}{\partial y \partial x}\\
-			f_{yx}=&amp;\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)=\frac{\partial^2 f}{\partial x \partial y}  &amp;  f_{yy}=&amp;\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right)=\frac{\partial^2 f}{\partial y^2}
+			f_{xx} &amp; = \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right)=\frac{\partial^2 f}{\partial x^2}  &amp;  f_{xy} &amp; = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)=\frac{\partial^2 f}{\partial y \partial x}\\
+			f_{yx} &amp; = \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)=\frac{\partial^2 f}{\partial x \partial y}  &amp;  f_{yy} &amp; = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right)=\frac{\partial^2 f}{\partial y^2}
 		\end{align*} \]
 	</p>
 	<p>Notice that the order of the variables for the mixed partials goes from right to left in the Leibniz notation instead of left to right.</p>
@@ -45,16 +45,16 @@
 	<p>Find all four partial derivatives of \( f(x,y)=x^2-4xy+4y^2 \).</p>
 	<p>We have to start by finding the (first) partial derivatives:
 		\[ \begin{align*}
-			f_x(x,y)=&amp; 2x-4y \\
-			f_y(x,y)=&amp; -4x+8y
+			f_x(x,y) &amp; =  2x-4y \\
+			f_y(x,y) &amp; =  -4x+8y
 		\end{align*} \]
 	</p>
 	<p>Now we’re ready to take the second partial derivatives:
 		\[ \begin{align*}
-			f_{xx}(x,y)=&amp; \frac{\partial}{\partial x}(2x-4y)=2 \\
-			f_{xy}(x,y)=&amp; \frac{\partial}{\partial y}(2x-4y)=-4 \\
-			f_{yx}(x,y)=&amp; \frac{\partial}{\partial x}(-4x+8y)=-4 \\
-			f_{yy}(x,y)=&amp; \frac{\partial}{\partial y}(-4x+8y)=8
+			f_{xx}(x,y) &amp; =  \frac{\partial}{\partial x}(2x-4y)=2 \\
+			f_{xy}(x,y) &amp; =  \frac{\partial}{\partial y}(2x-4y)=-4 \\
+			f_{yx}(x,y) &amp; =  \frac{\partial}{\partial x}(-4x+8y)=-4 \\
+			f_{yy}(x,y) &amp; =  \frac{\partial}{\partial y}(-4x+8y)=8
 		\end{align*} \]
 	</p>
 </div>
@@ -82,8 +82,8 @@
 	<p>Find \( \frac{\partial^2 f}{\partial x \partial y} \) for \( f(x,y)=\frac{e^{x+y}}{y^3+y}+y\ln(y) \).</p>
 	<p>We already found the first partial derivatives in an earlier example:
 		\[ \begin{align*}
-			\frac{\partial f}{\partial x}=&amp; \frac{1}{y^3+y}e^{x+y} \\
-			\frac{\partial f}{\partial y}=&amp; \frac{\left( e^{x+y}(1) \right)\left( y^3+y \right)-\left( e^{x+y} \right)\left( 3y^2+1 \right)}{\left( y^3+y \right)^2}+\left( 1 \right)\left( \ln(y) \right)+\left( y \right)\left( \frac{1}{y} \right)
+			\frac{\partial f}{\partial x} &amp; =  \frac{1}{y^3+y}e^{x+y} \\
+			\frac{\partial f}{\partial y} &amp; =  \frac{\left( e^{x+y}(1) \right)\left( y^3+y \right)-\left( e^{x+y} \right)\left( 3y^2+1 \right)}{\left( y^3+y \right)^2}+\left( 1 \right)\left( \ln(y) \right)+\left( y \right)\left( \frac{1}{y} \right)
 		\end{align*} \]
 	</p>
 	<p>Now we need to find the mixed partial derivative. The theorem says that \( \frac{\partial f^2}{\partial x \partial y}=\frac{\partial f^2}{\partial y \partial x} \), so it doesn't matter whether we find the partial derivative of \( \frac{\partial f}{\partial x} \)  with respect to \(y\) or the partial derivative of \( \frac{\partial f}{\partial y} \)  with respect to \(x\).  Which would you rather do?</p>
@@ -193,25 +193,25 @@
 	<p>Find all local maxima, minima, and saddle points for the function \[ z=9x^3+\frac{y^3}{3}-4xy. \]</p>
 	<p>We’ll need all the partial derivatives and second partial derivatives, so let’s compute them all first:
 		\[ \begin{align*}
-			z_x=&amp; 27x^2-4y,\quad  z_y= y^2-4x,\\
-			z_{xx}=&amp; 54x,\quad z_{xy}=z_{yx}= -4,\quad z_{y}= 2y.
+			z_x &amp; =  27x^2-4y,\quad  z_y= y^2-4x,\\
+			z_{xx} &amp; =  54x,\quad z_{xy}=z_{yx}= -4,\quad z_{y}= 2y.
 		\end{align*} \]
 	</p>
 	<p>Now to find the critical points:  We need both \( z_x \) and \( z_y \) to be zero (neither is ever undefined), so we need to solve this set of equations simultaneously:
 		\[ \begin{align*}
-			z_x=&amp; 27x^2-4y=0 \\
-			z_y=&amp; y^2-4x=0
+			z_x &amp; =  27x^2-4y=0 \\
+			z_y &amp; =  y^2-4x=0
 		\end{align*} \]
 	</p>
 	<p>Perhaps it's been a while since you solved systems of equations. One solution method is the substitution method &ndash; solve one equation for one variable and substitute into the other equation:
 		\[ \left.\begin{align*}
-			27x^2-4y=&amp; 0 \\
-			y^2-4x=&amp; 0
+			27x^2-4y &amp; =  0 \\
+			y^2-4x &amp; =  0
 		\end{align*}\right\} \to \text{Solve \( y^2-4x=0 \) for \( x=\frac{y^2}{4} \) \( \dots \)} \]
 		&hellip;then substitute into the other equation:
 			\[ \begin{align*}
-					27\left(\frac{y^2}{4}\right)^2-4y=&amp; 0 \\
-					\frac{27}{16}y^4-y=&amp; 0
+					27\left(\frac{y^2}{4}\right)^2-4y &amp; =  0 \\
+					\frac{27}{16}y^4-y &amp; =  0
 				\end{align*}
 			\]
 	</p>
@@ -219,9 +219,9 @@
 	<p>Plugging back in to the equation \( x=\frac{y^2}{4} \)  to find \(x\) gives us the two critical points: (0,0) and \( \left(\frac{4}{9},\frac{4}{3}\right) \).</p>
 	<p>Now to test them. First compute
 		\[ \begin{align*}
-			D(x,y)=&amp; (f_{xx})(f_{yy})-(f_{xy})(f_{yx}) \\
-			=&amp; (54x)(2y)-(-4)(-4) \\
-			=&amp; 108xy-16
+			D(x,y) &amp; =  (f_{xx})(f_{yy})-(f_{xy})(f_{yx}) \\
+			 &amp; =  (54x)(2y)-(-4)(-4) \\
+			 &amp; =  108xy-16
 		\end{align*} \] Then evaluate \( D \) at the two critical points:
 	</p>
 	<ul>
@@ -245,16 +245,16 @@
 	<h4>Example 5</h4>
 	<p>A company makes two products.  The demand equations for the two products are given below.  \(p_1\), \(p_2\), \(q_1\),and \(q_2\) are the prices and quantities for Products 1 and 2.
 		\[ \begin{align*}
-			q_1=&amp; 200-3p_1-p_2 \\
-			q_2=&amp; 150-p_1-2p_2
+			q_1 &amp; =  200-3p_1-p_2 \\
+			q_2 &amp; =  150-p_1-2p_2
 		\end{align*} \]
 	</p>
 	<p>Find the price the company should charge for each product in order to maximize total revenue.  What is that maximum revenue?</p>
 	<p>Revenue is still price\( \cdot \)quantity.  If we're selling two products, the total revenue will be the sum of the revenues from the two products:
 		\[ \begin{align*}
-			R(p_1,p_2)=&amp; p_1q_1+p_2q_2 \\
-			=&amp; p_1(200-3p_1-p_2)+p_2(150-p_1-2p_2) \\
-			=&amp; 200p_1-3p_1^2-2p_1p_2+150p_2-2p_2^2
+			R(p_1,p_2) &amp; =  p_1q_1+p_2q_2 \\
+			 &amp; =  p_1(200-3p_1-p_2)+p_2(150-p_1-2p_2) \\
+			 &amp; =  200p_1-3p_1^2-2p_1p_2+150p_2-2p_2^2
 		\end{align*} \]
 	</p>
 	<p>This is a function of two variables, the two prices, and we need to optimize it (just as in the previous examples).  First we find critical points.  The notation here gets a bit hard to look at, but hang in there &ndash; this is the same stuff we've done before. \[ R_{p_1}=200-6p_1-2p_2 \ \text{ and } \ R_{p_2}=150-2p_1-4p_2. \]</p>

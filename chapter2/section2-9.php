@@ -168,11 +168,11 @@
 	<p>Now we have two choices.  We can find the critical points of Profit by taking the derivative of \(P(q)\) directly, or we can find \(MR\) and \(MC\) and set them equal.  (Naturally, we'll get the same answer either way.)</p>
 	<p>Let's use \(MR = MC\) this time.
 		\[ \begin{align*}
-			MR=&amp; 300-0.04q\\
-			MC=&amp; 30\\
-			300-0.04q=&amp; 30\\
-			270=&amp; 0.04q\\
-			q=&amp; 6750
+			MR &amp; =  300-0.04q\\
+			MC &amp; =  30\\
+			300-0.04q &amp; =  30\\
+			270 &amp; =  0.04q\\
+			q &amp; =  6750
 		\end{align*} \]
 	</p>
 	<p>The only critical point is at  \(q = 6750\).  Now we need to be sure this is a local max and not a local min.  In this case, we'll look to the graph of \(P(q)\) &ndash; it's a downward opening parabola, so this must be a local max.  And since it's the only critical point, it must also be the global max.</p>

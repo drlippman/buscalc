@@ -106,18 +106,18 @@
 	<figure><img src="images/image036.png" alt="derivative graph"></figure>
 	<p>Using the second way to think about the Fundamental Theorem of Calculus, \( F(b) = F(a) + \int\limits_a^b F'(x) \,dx \), we can see that \( F(1) = F(0) + \int\limits_0^1 f(x) \,dx \). We know the value of \(F(0)\), and we can easily find \( \int\limits_0^1 f(x) \,dx \) from the graph &ndash; it's just the area of a triangle. So
 	\[ \begin{align*}
-		F(1) =&amp; \\
-		=&amp; 5+0.5 =5.5\\
-		F(2) =&amp; F(0) + \int\limits_0^2 f(x) \,dx \\
-		=&amp; 5+1=6
+		F(1)  &amp; =  \\
+		 &amp; =  5+0.5 =5.5\\
+		F(2)  &amp; =  F(0) + \int\limits_0^2 f(x) \,dx \\
+		 &amp; =  5+1=6
 	\end{align*} \]
 	</p>
 	<p>Note that we can start from any place of which we know the value; for example, now that we know \(F(2)\), we can use that to find
 	\[ \begin{align*}
-		F(3) =&amp; F(2) + \int\limits_2^3 f(x) \,dx \\
-		=&amp; 6-0.5=5.5 \\
-		F(4) =&amp; F(3) + \int\limits_3^4 f(x) \,dx \\
-		=&amp; 5.5-1=4.5
+		F(3)  &amp; =  F(2) + \int\limits_2^3 f(x) \,dx \\
+		 &amp; =  6-0.5=5.5 \\
+		F(4)  &amp; =  F(3) + \int\limits_3^4 f(x) \,dx \\
+		 &amp; =  5.5-1=4.5
 	\end{align*} \]
 	</p>
 </div>

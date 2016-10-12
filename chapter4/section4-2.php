@@ -77,10 +77,10 @@
 			<p>\( g_x(3,5) \) means we're thinking of \(x\) as the only variable, so we'll hold \(y\) fixed at \(y = 5\). That means we’ll be looking along the horizontal line \(y = 5\). To estimate \(g_x\), we need two function values. (3, 5) lies on the contour line, so we know that \(g(3, 5) = 0.6\). The next point as we move to the right is \(g(4.2,5) = 0.7\).</p>
 			<p>Now we can find the average rate of change: 
 				\[ \begin{align*}
-					\text{Average rate of change }=&amp; \frac{\text{(change in output)}}{\text{(change in input)}} \\
-					=&amp; \frac{\Delta g}{\Delta x}\\
-					=&amp; \frac{0.7-0.6}{4.2-3}\\
-					=&amp; \frac{1}{12}\approx 0.083
+					\text{Average rate of change } &amp; =  \frac{\text{(change in output)}}{\text{(change in input)}} \\
+					 &amp; =  \frac{\Delta g}{\Delta x}\\
+					 &amp; =  \frac{0.7-0.6}{4.2-3}\\
+					 &amp; =  \frac{1}{12}\approx 0.083
 				\end{align*} \]
 			 We can do the same thing by going to the next point we can read to the left, which is \(g(2.4,5) = 0.5\). Then the average rate of change is \[ \frac{\Delta g}{\Delta x}=\frac{0.5-0.6}{2.4-3}=\frac{1}{6}\approx 0.167.\]</p>
 			<p>Either of these would be a fine estimate of \( g_x(3,5) \) given the information we have, or we could take their average. We can estimate that \( g_x(3,5)\approx 0.125 \).</p>
@@ -133,8 +133,8 @@
 	<p>\( \frac{\partial f}{\partial x} \) means \(x\) is our only variable, we're thinking of \(y\) as a constant. Then we'll just find the ordinary derivative. From \(x\)'s point of view, this is an exponential function, divided by a constant, with a constant added. The constant pulls out in front, the derivative of the exponential function is the same thing, and we need to use the chain rule, so we multiply by the derivative of that exponent (which is just 1): \[ \frac{\partial f}{\partial x}=\frac{1}{y^3+y}e^{x+y}. \]</p>
 	<p>\(\frac{\partial f}{\partial y}\) means that we're thinking of \(y\) as the variable, acting as if \(x\) is constant. From \(y\)'s point of view, \(f\) is a quotient plus a product, so we'll need the quotient rule and the product rule: 
 		\[ \begin{align*}
-			\frac{\partial f}{\partial y}=&amp; \frac{(\ )(\ )-(\ )(\ )}{(\ )^2}+(\ )(\ )+(\ )(\ ) \\
-			=&amp; \frac{\left( e^{x+y}(1) \right)\left( y^3+y \right)-\left( e^{x+y} \right)\left( 3y^2+1 \right)}{\left( y^3+y \right)^2}+\left( 1 \right)\left( \ln(y) \right)+\left( y \right)\left( \frac{1}{y} \right)
+			\frac{\partial f}{\partial y} &amp; =  \frac{(\ )(\ )-(\ )(\ )}{(\ )^2}+(\ )(\ )+(\ )(\ ) \\
+			 &amp; =  \frac{\left( e^{x+y}(1) \right)\left( y^3+y \right)-\left( e^{x+y} \right)\left( 3y^2+1 \right)}{\left( y^3+y \right)^2}+\left( 1 \right)\left( \ln(y) \right)+\left( y \right)\left( \frac{1}{y} \right)
 		\end{align*} \]
 	</p>
 </div>

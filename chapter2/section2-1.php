@@ -188,6 +188,19 @@
 	<p>Notice that whenever \(x\) is close to 1, the values of \(y = f(x)\) are close to 3. Since \(f\) is not defined at \(x = 1\), the graph has a hole above \(x = 1\), but we only care about what \(f(x)\) is doing for \(x\) close to but <strong>not equal to</strong> 1.</p>
 </div>
 
+<div class="example">
+	<h4>Example 3</h4>
+	<p>Find \(\lim \limits_{x\to 3} \dfrac{\frac{1}{x} -\frac{1}{3} }{x-3}\)</p>
+	<p>Notice that this function is not defined at \(x = 3\).  We can find the limit using algebra.  Giving the two terms in the numerator a common denominator, we can simplify:</p>
+	<p>\[ \frac{\frac{1}{x} -\frac{1}{3} }{x-3} = \frac{\frac{1}{x} \cdot \frac{3}{3} -\frac{1}{3} \cdot \frac{x}{x} }{x-3} = \frac{\frac{3}{3x} -\frac{x}{3x} }{x-3} =\frac{\frac{3-x}{3x} }{x-3} \]</p>
+	<p>Remember that dividing a fraction is the same as multiplying by the reciprocal, so<br/>
+	\[\frac{\frac{3-x}{3x} }{x-3} =\frac{\frac{3-x}{3x} }{\frac{x-3}{1} }\]  is equivalent to \[\frac{3-x}{3x} \cdot \frac{1}{x-3}\]</p>
+	<p>To simplify further, we need to factor a negative 1 out of the numerator.  Then we can cancel the term \(\left(x-3\right)\)<br/>
+	\(\dfrac{-1(x-3)}{3x} \cdot \dfrac{1}{x-3} =\dfrac{-1}{3x}\) as long as \(x \neq 3\)</p>
+	<p>Now we can evaluate the limit using this simplified form.<br/>
+	\[\lim\limits_{x\to 3} \frac{\frac{1}{x} -\frac{1}{3} }{x-3} = \lim\limits_{x\to 3} \frac{-1}{3x} = -\frac{1}{9} \] </p>
+</div>
+
 <div class="videoplayer w639">
 	<video id="video_2.1.3" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
 		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-1/second_set_of_limit_examples.mp4" type='video/mp4' />
@@ -207,7 +220,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 3</h4>
+	<h4>Example 4</h4>
 	<p>Evaluate the one sided limits of the function \(f(x)\) graphed below at \(x = 0\) and \(x = 1\).</p>
 	<figure><img src="images/image014.png" alt="graph"/></figure>
 	<p>As \(x\) approach 0 from the <em>left</em>, the value of the function is getting closer to 1, so \( \lim\limits_{x\to 0^-} f(x) = 1. \)</p>
@@ -283,7 +296,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 4</h4>
+	<h4>Example 5</h4>
 	<p>Evaluate using continuity, if possible:</p>
 	<ol class="smlatin">
 		<li>\( \lim\limits_{x\to 2} x^3-4x \)</li>
@@ -296,6 +309,11 @@
 		<li>This function is not defined at x = 2, and so is not continuous at x = 2. We cannot use direct substitution.</li>
 	</ol>
 </div>
+
+
+
+
+
 
 </section>
 

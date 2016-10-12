@@ -21,9 +21,9 @@
 	<p>Find the derivative of \( y=\left(4x^3+15x\right)^2 \)</p>
 	<p>This is not a simple polynomial, so we can’t use the basic building block rules yet. It is a product, so we could write it as \(y=\left(4x^3+15x\right)^2=\left(4x^3+15x\right)\left(4x^3+15x\right)\) and use the product rule. Or we could multiply it out and simply differentiate the resulting polynomial. I’ll do it the second way:
 	\[ \begin{align*}
-		y=&amp; \left(4x^3+15x\right)^2\\
-		=&amp; 16x^6+120x^4+225x^2\\
-		y'=&amp; 96x^5+480x^3+450x
+		y &amp; =  \left(4x^3+15x\right)^2\\
+		 &amp; =  16x^6+120x^4+225x^2\\
+		y' &amp; =  96x^5+480x^3+450x
 	\end{align*} \]
 	</p>
 </div>
@@ -34,13 +34,6 @@
 
 <p>The Chain Rule is a common place for students to make mistakes. Part of the reason is that the notation takes a little getting used to. And part of the reason is that students often forget to use it when they should. When should you use the Chain Rule? Almost every time you take a derivative.</p>
 
-<div class="videoplayer w639">
-	<video id="video_2.5.1" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
-		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-5/chain_rule_intro_and_exs.mp4" type='video/mp4' />
-		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-5/chain_rule_intro_and_exs.webm" type='video/webm' />
-		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-	</video>
-</div>
 
 <div class="important">
 	<h4>Derivative Rules: Chain Rule</h4>
@@ -57,6 +50,14 @@
 </div>
 
 <p>I recite the version in words each time I take a derivative, especially if the function is complicated.</p>
+
+<div class="videoplayer w639">
+	<video id="video_2.5.1" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
+		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-5/chain_rule_intro_and_exs.mp4" type='video/mp4' />
+		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-5/chain_rule_intro_and_exs.webm" type='video/webm' />
+		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	</video>
+</div>
 
 <div class="example">
 	<h4>Example 2</h4>
@@ -81,6 +82,8 @@
 	<p>Differentiate \( y=e^{x^2+5} \).</p>
 	<p>This isn’t a simple exponential function; it’s a composition. Typical calculator or computer syntax can help you see what the “inside” function is here. On a TI calculator, for example, when you push the \( e^x \) key, it opens up parentheses: e^( . This tells you that the "inside" of the exponential function is the exponent. Here, the inside is the exponent \( x^2+5 \). Now we can use the Chain Rule: We want the derivative of the outside TIMES the derivative of the inside. The outside is the <q>\(e\) to the something</q> function, so its derivative is the same thing. The derivative of what’s inside is \(2x\). So \[\frac{d}{dx}\left( e^{x^2+5} \right)= \left( e^{x^2+5} \right)\cdot (2x).\]</p>
 </div>
+
+
 
 <div class="example">
 	<h4>Example 5</h4>
@@ -143,10 +146,10 @@
 	</table>
 	<p>
 	\[ \begin{align*}
-		(f\circ g)(-1)=&amp; f\left(g(-1)\right)=f(3)=0\\
-		(f\circ g)(0)=&amp; f\left(g(0)\right)=f(1)=1\\
-		(f\circ g)'(-1)=&amp; f'\left(g(-1)\right)\cdot g'(-1)=f'(3)\cdot (0)=(2)(0)=0 \text{ and}\\
-		(f\circ g)'(0)=&amp; f'\left(g(0)\right)\cdot g'(0)=f'(1)\cdot (2)=(-1)(2)=-2
+		(f\circ g)(-1) &amp; =  f\left(g(-1)\right)=f(3)=0\\
+		(f\circ g)(0) &amp; =  f\left(g(0)\right)=f(1)=1\\
+		(f\circ g)'(-1) &amp; =  f'\left(g(-1)\right)\cdot g'(-1)=f'(3)\cdot (0)=(2)(0)=0 \text{ and}\\
+		(f\circ g)'(0) &amp; =  f'\left(g(0)\right)\cdot g'(0)=f'(1)\cdot (2)=(-1)(2)=-2
 	\end{align*} \]
 	</p>
 </div>
@@ -171,17 +174,17 @@
 		<li>In 2 years, \(y = 2400\cdot 2^{2/3} \approx 3,810\) people.</li>
 		<li>We know \(y = 50,000\), and we need to solve \(50,000 = 2400\cdot 2^{t/3}\) for \(t\). We could start by isolating the exponential by dividing both sides by 2400,
 			\[ \begin{align*}
-				\frac{50000}{2400}=&amp; 2^{t/3} \\
-				 \ln\left(\frac{50000}{2400}\right)=&amp; \ln\left(2^{t/3}\right) \qquad \text{(Taking the natural log of both sides.)}\\
-				\ln\left(\frac{50000}{2400}\right)=&amp; \frac{t}{3}\ln(2) \qquad \text{(Using the exponent property for logs.)}\\
-				t=&amp; \frac{3\ln\left(\frac{50000}{2400}\right)}{\ln(2)}\approx 13.14\text{ years}\qquad \text{(Solving for \( t \).)}
+				\frac{50000}{2400} &amp; =  2^{t/3} \\
+				 \ln\left(\frac{50000}{2400}\right) &amp; =  \ln\left(2^{t/3}\right) \qquad \text{(Taking the natural log of both sides.)}\\
+				\ln\left(\frac{50000}{2400}\right) &amp; =  \frac{t}{3}\ln(2) \qquad \text{(Using the exponent property for logs.)}\\
+				t &amp; =  \frac{3\ln\left(\frac{50000}{2400}\right)}{\ln(2)}\approx 13.14\text{ years}\qquad \text{(Solving for \( t \).)}
 			\end{align*} \]
 		We expect 50,000 people to have the disease about 13.14 years from now.
 		</li>
 		<li>This is asking for \(\frac{dy}{dt}\) when \(t =\) 0 and 2 years. Using the chain rule,
 			\[ \begin{align*}
-				\frac{dy}{dt}=&amp; \frac{d}{dt}\left(2400\cdot 2^{t/3}\right) \\
-				=&amp; 2400\cdot 2^{t/3}\cdot \ln(2)\cdot\frac{1}{3} \\
+				\frac{dy}{dt} &amp; =  \frac{d}{dt}\left(2400\cdot 2^{t/3}\right) \\
+				 &amp; =  2400\cdot 2^{t/3}\cdot \ln(2)\cdot\frac{1}{3} \\
 				\approx&amp; 554.5\cdot 2^{t/3}
 			\end{align*} \]
 		So, at \( t=0 \) the rate of growth of the disease is approximately \(554.5\cdot 2^0 \approx 554.5\) people/year. In 2 years the rate of growth will be approximately \(554.5\cdot 2^{2/3} \approx 880\) people/year.

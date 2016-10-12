@@ -74,12 +74,12 @@
 	<p>Using our function \( f(x)=x^2 \), \( f(x+h)=(x+h)^2=x^2+2xh+h^2 \).</p>
 	<p>Then
 		\[ \begin{align*}
-			f'(x)=&amp; \lim\limits_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{x^2+2xh+h^2-x^2}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{2xh+h^2}{h}\\
-			=&amp; \lim\limits_{h\to 0} \frac{h(2x+h)}{h}\\
-			=&amp; \lim\limits_{h\to 0} (2x+h)\\
-			=&amp; 2x
+			f'(x) &amp; =  \lim\limits_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{x^2+2xh+h^2-x^2}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{2xh+h^2}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} \frac{h(2x+h)}{h}\\
+			 &amp; =  \lim\limits_{h\to 0} (2x+h)\\
+			 &amp; =  2x
 		\end{align*} \]
 	</p>
 	<p>From all that, we find that \( f'(x)=2x \).</p>
@@ -175,10 +175,10 @@
 	<h4>Example 5</h4>
 	<p>Find the derivative of \( p(x)=17x^{10}+13x^8-1.8x+1003 \).</p>
 	<p>\[ \begin{align*}
-		\frac{d}{dx}\left( 17x^{10}+13x^8-1.8x+1003 \right)=&amp; \frac{d}{dx}\left( 17x^{10} \right)+\frac{d}{dx}\left( 13x^8 \right)-\frac{d}{dx}\left( 1.8x \right)+\frac{d}{dx}\left( 1003 \right)\\
-		=&amp; 17\frac{d}{dx}\left( x^{10} \right)+13\frac{d}{dx}\left( x^8 \right)-1.8\frac{d}{dx}\left( x \right)+\frac{d}{dx}\left( 1003 \right)\\
-		=&amp; 17\left(10x^9\right)+13\left(8x^7\right)-1.8\left(1\right)+0\\
-		=&amp; 170x^9+104x^7-1.8
+		\frac{d}{dx}\left( 17x^{10}+13x^8-1.8x+1003 \right) &amp; =  \frac{d}{dx}\left( 17x^{10} \right)+\frac{d}{dx}\left( 13x^8 \right)-\frac{d}{dx}\left( 1.8x \right)+\frac{d}{dx}\left( 1003 \right)\\
+		 &amp; =  17\frac{d}{dx}\left( x^{10} \right)+13\frac{d}{dx}\left( x^8 \right)-1.8\frac{d}{dx}\left( x \right)+\frac{d}{dx}\left( 1003 \right)\\
+		 &amp; =  17\left(10x^9\right)+13\left(8x^7\right)-1.8\left(1\right)+0\\
+		 &amp; =  170x^9+104x^7-1.8
 	\end{align*} \]</p>
 </div>
 
@@ -199,8 +199,8 @@
 	<p>The first step is translate into exponents: \[y=3\sqrt{t}-\frac{4}{t^4}+5e^t=3t^{1/2}-4t^{-4}+5e^t\]</p>
 	<p>Now you can take the derivative:
 	\[ \begin{align*}
-		\frac{d}{dt}\left( 3t^{1/2}-4t^{-4}+5e^t \right)=&amp; 3\left(\frac{1}{2}t^{-1/2}\right)-4\left(-4t^{-5}\right)+5\left(e^t\right) \\
-		=&amp; \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t
+		\frac{d}{dt}\left( 3t^{1/2}-4t^{-4}+5e^t \right) &amp; =  3\left(\frac{1}{2}t^{-1/2}\right)-4\left(-4t^{-5}\right)+5\left(e^t\right) \\
+		 &amp; =  \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t
 		\end{align*} \]
 	</p>
 	<p>If there is a reason to, you can rewrite the answer with radicals and positive exponents: \[y'= \frac{3}{2}t^{-1/2}+16t^{-5}+5e^t= \frac{3}{2\sqrt{t}}+\frac{16}{t^5}+5e^t\]</p>
@@ -251,11 +251,14 @@
 	<p>The <strong>Total Cost</strong> (<strong>TC</strong>, or sometimes just <strong>C</strong>) for \(q\) items is the total cost of producing them. It’s the sum of the fixed cost and the total variable cost for producing \(q\) items.</p>
 
 	<h4>Average Cost </h4>
-	<p>The <strong>Average Cost</strong> (<strong>AC</strong>) for \(q\) items is the total cost divided by \(q\), or \(\frac{TC}{q}\). You can also talk about the average fixed cost, \(\frac{FC}{q}\), or the average variable cost, \(\frac{TVC}{q}\).</p>
+	<p>The <strong>Average Cost</strong> (<strong>AC</strong>) for \(q\) items is the total cost divided by \(q\), or</p>
+	<p>\[AC(q) = \frac{TC}{q}\]</p>
+	<p>You can also talk about the average fixed cost, \(\frac{FC}{q}\), or the average variable cost, \(\frac{TVC}{q}\).</p>
 
 	<h4>Marginal Cost</h4>
 	<p>The <strong>Marginal Cost</strong> (<strong>MC</strong>) at \(q\) items is the cost of producing the next item. Really, it’s \[MC(q) = TC(q + 1) - TC(q).\] In many cases, though, it’s easier to approximate this difference using calculus (see Example 1 below). And some sources define the marginal cost directly as the derivative, \[MC(q) = TC'(q).\] In this course, we will use both of these definitions as if they were interchangeable.</p>
 	<p>The units on marginal cost is cost per item.</p> 
+	<p><strong>For the purposes of this course, if a question asks for marginal cost, revenue, profit, etc., compute it using the derivative if possible</strong>, unless specifically told otherwise.</p>
 </div>
 
 <p>Why is it okay that there are two definitions for Marginal Cost (and Marginal Revenue, and Marginal Profit)?</p>
@@ -319,14 +322,14 @@
 
 <div class="example">
 	<h4>Example 11</h4>
-	<p>The cost to produce \(x\) items is \(\sqrt{x}\) hundred dollars.</p>
+	<p>The cost to produce \(x\) items is \(C(x) = \sqrt{x}\) hundred dollars.</p>
 	<ol class="smlatin">
 		<li>What is the cost for producing 100 items? 101 items? What is cost of the 101st item?</li>
-		<li>For \(f(x) = \sqrt{x}\), calculate \(f '(x)\) and evaluate \(f '\) at \(x = 100\). How does \(f '(100)\) compare with the last answer in Part a?</li>
+		<li>Calculate \(C '(x)\) and evaluate \(C '\) at \(x = 100\). How does \(C '(100)\) compare with the last answer in Part a?</li>
 	</ol>
 	<ol class="smlatin">
-		<li>Put \(f(x) = \sqrt{x} = x^{1/2}\)hundred dollars, the cost for \(x\) items. Then \(f(100) =\)$1000 and \(f(101) =\)$1004.99, so it costs $4.99 for that 101st item. Using this definition, the marginal cost is $4.99.</li>
-		<li>\( f'(x)=\frac{1}{2}x^{-1/2}\), so \( f'(100)=\frac{1}{2\sqrt{100}}=\frac{1}{20} \) hundred dollars = $5.00.</li>
+		<li>\(C(100) =\) 10 hundred dollars = $1000 and \(C(101) =\)10.0499 hundred dollars = $1004.99, so it costs $4.99 for that 101st item. Using this definition, the marginal cost is $4.99.</li>
+		<li>\( C'(x)=\frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}\), so \( C'(100)=\frac{1}{2\sqrt{100}}=\frac{1}{20} \) hundred dollars = $5.00.</li>
 	</ol>
 	<p>Note how close these answers are! This shows (again) why it’s OK that we use both definitions for marginal cost.</p>
 </div>

@@ -84,9 +84,9 @@
 	<p>Find the antiderivative of \( y=3x^7-15\sqrt{x}+\frac{14}{x^2} \).</p>
 	<p>
 	\[ \begin{align*}
-		\int\left( 3x^7-15\sqrt{x}+\frac{14}{x^2} \right)\, dx=&amp; \int\left( 3x^7-15x^{1/2}+14x^{-2} \right)\, dx \\
-		=&amp; 3\frac{x^8}{8}-15\frac{x^{3/2}}{3/2}+14\frac{x^{-1}}{-1}+C \\
-		=&amp; \frac{3}{8}x^8-10x^{3/2}-14x^{-1}+C
+		\int\left( 3x^7-15\sqrt{x}+\frac{14}{x^2} \right)\, dx &amp; =  \int\left( 3x^7-15x^{1/2}+14x^{-2} \right)\, dx \\
+		 &amp; =  3\frac{x^8}{8}-15\frac{x^{3/2}}{3/2}+14\frac{x^{-1}}{-1}+C \\
+		 &amp; =  \frac{3}{8}x^8-10x^{3/2}-14x^{-1}+C
 	\end{align*} \]
 	</p>
 </div>
@@ -103,9 +103,9 @@
 	<p>This time we are looking for a particular antiderivative; we need to find exactly the right constant. Let's start by finding the antiderivative: \[ \int e^x\, dx=e^x+C \]</p>
 	<p>So we know that \( F(x)=e^x+\text{(some constant)} \), now we just need to find which one. To do that, we'll use the other piece of information (the initial condition):
 	\[ \begin{align*}
-		F(x)=&amp; e^x+C \\
-		F(0)=&amp; e^0+C=1+C=10 \\
-		C=&amp; 9
+		F(x) &amp; =  e^x+C \\
+		F(0) &amp; =  e^0+C=1+C=10 \\
+		C &amp; =  9
 	\end{align*} \]
 	</p>
 	<p>The particular constant we need is 9; thus, \( F(x)=e^x+9 \).</p>
@@ -142,18 +142,18 @@
 		<li>
 			<p>One antiderivative of \(x\) is \( F(x)=\frac{1}{2}x^2 \), and
 				\[ \begin{align*}
-					\int\limits_1^3 x\, dx =&amp; \left[\frac{1}{2}x^2\right]_1^3 \\
-					=&amp; \left(\frac{1}{2}(3)^2\right) - \left(\frac{1}{2}(1)^2\right) \\
-					=&amp; \frac{9}{2}-\frac{1}{2} \\
-					=&amp; 4.
+					\int\limits_1^3 x\, dx  &amp; =  \left[\frac{1}{2}x^2\right]_1^3 \\
+					 &amp; =  \left(\frac{1}{2}(3)^2\right) - \left(\frac{1}{2}(1)^2\right) \\
+					 &amp; =  \frac{9}{2}-\frac{1}{2} \\
+					 &amp; =  4.
 				\end{align*} \]
 				Note that this answer agrees with the answer we got geometrically.</p>
 			<p>If we had used another antiderivative of x, say \( F(x)=\frac{1}{2}x^2+7 \), then
 				\[ \begin{align*}
-					\int\limits_1^3 x\, dx =&amp; \left[\frac{1}{2}x^2+7\right]_1^3 \\
-					=&amp; \left(\frac{1}{2}(3)^2+7\right) - \left(\frac{1}{2}(1)^2+7\right) \\
-					=&amp; \frac{9}{2}+7-\frac{1}{2}-7 \\
-					=&amp; 4.
+					\int\limits_1^3 x\, dx  &amp; =  \left[\frac{1}{2}x^2+7\right]_1^3 \\
+					 &amp; =  \left(\frac{1}{2}(3)^2+7\right) - \left(\frac{1}{2}(1)^2+7\right) \\
+					 &amp; =  \frac{9}{2}+7-\frac{1}{2}-7 \\
+					 &amp; =  4.
 				\end{align*} \]
 			</p>
 			<p>In general, <strong>whatever constant we choose gets subtracted away during the evaluation</strong>, so we might as well always choose the easiest one, where the constant is 0.</p>
@@ -226,9 +226,9 @@
 	<p>We can write the marginal cost as \( MC(x)=4x^{-1/2}+2 \). We can then use the basic rules to find an antiderivative: \[ C(x)=4\frac{x^{1/2}}{1/2}+2x=8\sqrt{x}+2x.\]</p>
 	<p>Using this,
 		\[ \begin{align*}
-			\text{Net change in cost }=&amp; \int\limits_4^5 \left(4x^{-1/2}+2\right)\, dx \\
-			=&amp; \left[ 8\sqrt{x}+2x \right]_4^5 \\
-			=&amp; \left( 8\sqrt{5}+2(5) \right)-\left( 8\sqrt{4}+2(4) \right) \\
+			\text{Net change in cost } &amp; =  \int\limits_4^5 \left(4x^{-1/2}+2\right)\, dx \\
+			 &amp; =  \left[ 8\sqrt{x}+2x \right]_4^5 \\
+			 &amp; =  \left( 8\sqrt{5}+2(5) \right)-\left( 8\sqrt{4}+2(4) \right) \\
 			\approx&amp; 3.889
 		\end{align*} \]
 	</p>

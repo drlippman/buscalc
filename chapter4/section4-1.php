@@ -235,9 +235,9 @@
 <figure><img src="images/image011.png" alt="3D distance"/></figure>
 <p>In this situation the calculations may appear more complicated, but they are straightforward and the final formula is what we hope it would be given the 2-dimensional formula: 
 	\[ \begin{align*}
-		\text{distance}^2=&amp; \text{base}^2+\text{height}^2 \\
-		=&amp; \left(\sqrt{\Delta x^2+\Delta y^2}\right)^2+\Delta z^2 \\
-		=&amp; \Delta x^2+\Delta y^2+\Delta z^2
+		\text{distance}^2 &amp; =  \text{base}^2+\text{height}^2 \\
+		 &amp; =  \left(\sqrt{\Delta x^2+\Delta y^2}\right)^2+\Delta z^2 \\
+		 &amp; =  \Delta x^2+\Delta y^2+\Delta z^2
 	\end{align*} \]
 so \[ \text{distance}=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}. \]</p>
 
@@ -245,8 +245,8 @@ so \[ \text{distance}=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}. \]</p>
 	<h4>Distance in 3-Dimensions</h4>
 	<p>If \(P = (x_1 , y_1 , z_1 )\) and \(Q = (x_2 , y_2 , z_2 )\) are points in space, then the distance between \(P\) and \(Q\) is 
 		\[ \begin{align*}
-			\text{distance}=&amp; \sqrt{\Delta x^2+\Delta y^2+\Delta z^2} \\
-			=&amp; \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2+\left(z_2-z_1\right)^2}
+			\text{distance} &amp; =  \sqrt{\Delta x^2+\Delta y^2+\Delta z^2} \\
+			 &amp; =  \sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2+\left(z_2-z_1\right)^2}
 		\end{align*} \]
 	</p>
 </div>
@@ -328,17 +328,17 @@ so \[ \text{distance}=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}. \]</p>
 	<p>The first coordinate of the ordered pair is \(d\), so the \(d\)-axis will be horizontal; the \(m\)-axis will be vertical. Remember that the domain for this function is really just where \(d \geq 0\) and \(m \geq 0\), so we will only draw the curves in the first quadrant.</p>
 	<p>When \( c=0 \):
 		\[ \begin{align*}
-			C(d,m)=&amp; 40d+0.15m=0 \\
-			0.15m=&amp; -40d \\
-			m=&amp; -\frac{40}{0.15}d\approx -267d
+			C(d,m) &amp; =  40d+0.15m=0 \\
+			0.15m &amp; =  -40d \\
+			m &amp; =  -\frac{40}{0.15}d\approx -267d
 		\end{align*} \]
 	</p>
 	<p>This is the equation of a line, with slope about -267, passing through the origin. Because of the domain restrictions, the <q>curve</q> we will draw for this level is simply the origin. Putting this back into the car rental context, the only point where we pay $0 for renting the car is when we rent the car for 0 days and drive it 0 miles &ndash; that is, if we don't rent it at all.</p>
 	<p>When \( c=100 \):
 		\[ \begin{align*}
-			C(d,m)=&amp; 40d+0.15m=100 \\
-			0.15m=&amp; -40d+100 \\
-			m=&amp; -\frac{40}{0.15}d+\frac{100}{0.15}\approx -267d+667
+			C(d,m) &amp; =  40d+0.15m=100 \\
+			0.15m &amp; =  -40d+100 \\
+			m &amp; =  -\frac{40}{0.15}d+\frac{100}{0.15}\approx -267d+667
 		\end{align*} \]
 	</p>
 	<p>This is the equation of a line, with slope about -267, and \(d\)-intercept of about 667. This section of this line that lies in the first quadrant is shown with 100 labeling it.</p>
@@ -438,16 +438,16 @@ so \[ \text{distance}=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}. \]</p>
 	<h4>Example 13</h4>
 	<p>The demand functions for two products are given below. \(p_1\), \(p_2\), \(q_1\), and \(q_2\) are the prices (in dollars) and quantities for Products 1 and 2:
 		\[ \begin{align*}
-			q_1=&amp; 200-3p_1-p_2 \\
-			q_2=&amp; 150-p_1-2p_2
+			q_1 &amp; =  200-3p_1-p_2 \\
+			q_2 &amp; =  150-p_1-2p_2
 		\end{align*} \]
 	</p>
 	<p>Are these two products complementary goods or substitute goods? What is the quantity demanded for each when the price for Product 1 is $20 per item and the price for Product 2 is $30 per item?</p>
 	<p>These products are complementary: an increase in either price decreases both demands. You can see that because the coefficients are both negative in each demand function.</p>
 	<p>When \(p_1 = 20\) and \(p_2 = 30\), we have
 		\[ \begin{align*}
-			q_1=&amp; 200-3(20)-(30)=110 \\
-			q_2=&amp; 150-(20)-2(30)=70
+			q_1 &amp; =  200-3(20)-(30)=110 \\
+			q_2 &amp; =  150-(20)-2(30)=70
 		\end{align*} \]
 	So 110 units are demanded for Product 1 and 70 units are demanded for Product 2 when the price for Product 1 is $20 per item and the price for Product 2 is $30 per item.
 </p>

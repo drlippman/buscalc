@@ -289,20 +289,20 @@
 	<p>Given the function \(k(t)=t^3+2\):<br />a) Evaluate \(k(2)\).<br />b) Solve \(k(t)=1\).</p>
 
 	<p>a) To evaluate \(k(2)\), we plug in the input value 2 into the formula wherever we see the input variable \(t\), then simplify:
-	\[\begin{align*}k(2)=&amp;2^3+2\\k(2)=&amp;8+2 \end{align*}\] So \(k(2) = 10\).</p>
+	\[\begin{align*}k(2) &amp; = 2^3+2\\k(2) &amp; = 8+2 \end{align*}\] So \(k(2) = 10\).</p>
 
 	<p>b) To solve \(k(t) = 1\), we set the formula for \(k(t)\) equal to 1, and solve for the input value that will produce that output:
 	\[\begin{align*}
-		k(t)=&amp;1 &amp; \\
-		t^3+2=&amp;1 &amp;\text{substitute the original formula} \\
-		t^3=&amp;-1 &amp;\text{subtract 2 from each side} \\
-		t=&amp;1 &amp;\text{take the cube root of each side}
+		k(t) &amp; = 1 &amp; \\
+		t^3+2 &amp; = 1 &amp;\text{substitute the original formula} \\
+		t^3 &amp; = -1 &amp;\text{subtract 2 from each side} \\
+		t &amp; = 1 &amp;\text{take the cube root of each side}
 	\end{align*}\]
 	</p>
 
 	<p>When solving an equation using formulas, you can check your answer by using your solution in the original equation to see if your calculated answer is correct.</p>
 
-	<p>We want to know if \(k(t) = 1\) is true when \(t=-1\): \[\begin{align*}k(-1)=&amp;(-1)^3+2\\=&amp; -1+2\\=&amp;1,\end{align*}\] which was the desired result.
+	<p>We want to know if \(k(t) = 1\) is true when \(t=-1\): \[\begin{align*}k(-1) &amp; = (-1)^3+2\\ &amp; =  -1+2\\ &amp; = 1,\end{align*}\] which was the desired result.
 </p>
 </div>
 
