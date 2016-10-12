@@ -1,0 +1,6 @@
+Put each chapter in it's own folder.
+Put different subsections on their own pages.
+Use article for the entire page?
+Have separate divs for theorems/definitions/lemmas/etc, examples.
+Be sure to use the header and footer properly
+Use sections for material and for exercises?

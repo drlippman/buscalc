@@ -1,0 +1,408 @@
+/*Replaced all "transparent" with "white" to fix display issues in Firefox*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+	padding:  0;
+	margin: 0;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+a {
+	text-decoration: none;
+	color: DeepSkyBlue;
+}
+
+p {
+	margin-top: 0.75em;
+	margin-bottom: 0.25em;
+}
+
+p.center {
+	text-align: center;
+	width: 90%;
+}
+
+q, blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+ul, ol {
+	margin-left: 2em;
+}
+
+figure{
+	text-align: center;
+}
+
+img{
+	padding: .5em;
+	vertical-align: top;
+}
+
+.page-wrap {
+	float: right;
+	width: 100%; /*Seems to need this to make the text transition smooth */
+	transition: width 0.3s ease;
+}
+
+.content {
+	padding: 2.5em 1.75em 1em; /*Keeps the main content from getting too close to the edges*/
+	margin:  auto;  /*Need this to keep the main text centered in the page instead of on the left*/
+	max-width: 960px; /*Sets the width of the text*/
+	text-align: justify; 
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.content h1 {
+	font-family: "century gothic", "avant garde", arial, helvetica, sans-serif;
+	font-size: 1.75em;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.content h2, .content h3 {
+	margin: .5em 0;
+	font-weight: 300;
+}
+
+.content h2 {
+	font-size: 1.5em;
+	color: DeepSkyBlue;
+}
+
+.content h3 {
+	font-size: 1.15em;
+	text-decoration: underline;
+}
+
+.content h4, .content h5 {
+	margin-top: .75em;
+}
+
+.content h5 {
+	font-size: .9em;
+	text-decoration: underline;
+}
+
+.content figure {
+	margin-bottom: 2em;
+}
+
+.content table {
+	border-collapse: collapse;
+	margin-bottom: .5em;
+}
+
+.content tr, .content th, .content td {
+	border-collapse: inherit;
+	padding: .5em .75em;
+}
+
+.content table.border,  .content table.noborder {
+	display: inline;
+	margin-right: .5em;
+	margin-bottom: .5em
+}
+
+.border tr, .border th, .border td {
+	border: 1px solid black;
+}
+
+.noborder tr, .noborder th, .noborder td, .align tr, .align th, .align td{
+	border: none;
+}
+
+.content table.align {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.content ol li  {
+	margin-bottom: 1.5em;
+}
+
+.content ol ol {
+	list-style-type: lower-latin;
+	margin-bottom: inherit;
+}
+
+.content ol ol ol {
+	list-style-type: lower-roman;
+	margin-bottom: inherit;
+}
+
+.content ol.smroman {
+	list-style-type: lower-roman;
+}
+
+.content ol.smlatin {
+	list-style-type: lower-latin;
+}
+
+.geogebra, .videoplayer {
+	margin: 1em auto 2.5em;
+}
+
+/*Additional classes for videos so my CSS is "proper"*/
+.w852 {
+	width: 852px;
+}
+.w639 {
+	width: 639px;
+}
+.w426 {
+	width: 426px;
+}
+
+/*Begin main menu styling*/
+.main-nav-buttons {
+	font-family: "century gothic", "avant garde", arial, helvetica, sans-serif;
+	padding: 0.3em;
+	vertical-align: middle;
+	text-align: center;
+	position: fixed;
+	width: auto;  /*Set a length to force the background to appear.*/
+	height: 2.5em;
+	/*background: white;*/
+	/*border:  0 1px 1px 0 solid black;*/
+	left: 0; /*Need this to keep smooth transition when it moves*/
+	transition:  all 0.3s ease;
+}
+
+.main-nav-buttons a {
+	font-family: inherit;
+	font-size: 2em;
+	position: absolute;
+	left: 5px;
+	color: black;
+}
+
+.main-nav {
+	font-family:  arial, helvetica, sans-serif;
+	font-size: 1em;
+	position: fixed;
+	top: 0;
+	width: 0;
+	height: 100%;
+	padding-bottom: 2em;
+	/*background: #3B3B3B;*/
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	transition: width 0.3s ease;
+}
+
+.main-nav h1 {
+	font-family: "century gothic", "avant garde", arial, helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	text-align: center;
+	padding: 0.3em;
+	margin: 0.75em 0em;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+	border-image: linear-gradient(to left, white, black, white) 0 0 100% 0 stretch; 
+	/*border-image: linear-gradient(to left, transparent, black, transparent) 0 0 100% 0 stretch;*/ 
+	/*Need the "to", too,  instead of just "left" or "right". The values control how large the border is on various sides*/
+}
+
+.main-nav h2 {
+	font-family: "century gothic", "avant garde", arial, helvetica, sans-serif;
+	font-size: 1.75em;
+	font-weight: 100;
+	text-align: center;
+	padding: 0.75em;
+	margin: 0.75em 0 0 0;
+	border-top: 1px solid;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+	border-image: linear-gradient(to left, white, black, white) 100% 0 100% 0 stretch;
+	/*border-image: linear-gradient(to left, transparent, black, transparent) 100% 0 100% 0 stretch;*/
+}
+
+.main-nav ol, .main-nav li { 
+	list-style-type: none;
+	list-style-position: outside;
+	margin-left: 0;
+}
+
+.main-nav a {
+	display: block;
+	/* background: linear-gradient(#3e3e3e, #383838);*/
+	border: none;
+	border-top: 1px solid white;
+	border-image: linear-gradient(to right, silver, white) 100% 0 0 0 stretch; 
+	/*border-image: linear-gradient(to right, silver, transparent) 100% 0 0 0 stretch; */
+	color: inherit;
+	padding: 1em;
+}
+
+.main-nav a.first-link{
+	border: none;
+}
+/*End main menu styling*/
+
+/*Don't seem to need this next block -- just keeping it until I'm sure*/
+/*
+.main-nav:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 34px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}*/
+
+/*What follows allows the menus to change. In order for the adjacent sibling combinator (the +)  to work the page-wrap must immediately follow the navigation*/
+.close-menu {
+	display: none;
+}
+
+#main-nav:target {
+	width: 30%;
+}
+
+#main-nav:target + .page-wrap {
+	width: 70%; /*Shrinks it*/
+}
+
+#main-nav:target + .page-wrap .open-menu {
+	display: none;
+}
+
+#main-nav:target + .page-wrap .close-menu {
+	display: block;
+}
+
+#main-nav:target + .page-wrap .main-nav-buttons {
+	left: 30%;
+}
+/*End of menu change code.*/
+
+/*Styling for theorems, etc*/
+.important {
+	margin: 1em auto;
+	padding: 0.75em;
+	width: 90%;
+	background: linear-gradient(to bottom right, yellow, white);
+	/*background: linear-gradient(to bottom right, yellow, transparent*/
+}
+
+.important h4 {
+	font-weight: bold;
+}
+
+.thmdef {
+	/*position: relative;*/ /*Only need if doing the border on the outside the other way,*/
+	margin: 1em auto;
+	padding: 0.75em;
+	width: 90%;
+	border-top: none;
+	border-right: none;
+	border-bottom:  none;
+	border-left: 2px solid;
+	border-image: linear-gradient(BlueViolet, white) 0 0 0 100% stretch;
+	/*border-image: linear-gradient(BlueViolet, transparent) 0 0 0 100% stretch;*/
+}
+
+.thmdef h4 {
+	color:  BlueViolet;
+	width: 110%; /*Extra width compensates for the shifting it left*/
+	margin-top: -.5em;
+	margin-left: -1.5em;
+	margin-bottom: .5em;
+	padding-left: 1.5em; /*Need to cancel the margin-left to put the header where we want it*/
+	border-right: none;
+	border-bottom:  1px solid;
+	border-left: none;
+	border-image: linear-gradient(to right, BlueViolet, white)  0 0 110% 0 stretch;
+	/*border-image: linear-gradient(to right, BlueViolet, transparent)  0 0 110% 0 stretch;*/
+}
+
+/*
+.thmdef::before, .thmdef::after {
+	content: ""; 
+	position: absolute; 
+	top: -3px; 
+	left: -3px;
+}
+ .thmdef::before {
+	bottom: -3px;
+	width: 3px;
+	background-image:  linear-gradient(BlueViolet, transparent);
+}
+ .thmdef::after {
+	right: -3px;
+	height: 3px;
+	background-image: linear-gradient(to right, BlueViolet, transparent);
+ }
+*/
+
+.example {
+	/*position: relative;*/ /*Only need if doing the border on the outside the other way,*/
+	margin: 1em auto;
+	padding: 0.75em;
+	width: 90%;
+	border-top: none;
+	border-right: none;
+	border-bottom:  none;
+	border-left: 2px solid;
+	border-image: linear-gradient(DeepSkyBlue, white) 0 0 0 100% stretch;
+	/*border-image: linear-gradient(DeepSkyBlue, transparent) 0 0 0 100% stretch;*/
+}
+
+.example h4 {
+	color:  DeepSkyBlue;
+	width: 110%; /*Extra width compensates for the shifting it left*/
+	margin-top: -.5em;
+	margin-left: -1.5em;
+	margin-bottom: .5em;
+	padding-left: 1.5em; /*Need to cancel the margin-left to put the header where we want it*/
+	border-right: none;
+	border-bottom:  1px solid;
+	border-left: none;
+	border-image: linear-gradient(to right, DeepSkyBlue, white)  0 0 110% 0 stretch;
+	/*border-image: linear-gradient(to right, DeepSkyBlue, transparent)  0 0 110% 0 stretch;*/
+}
+/*End styling for theorems, etc*/
+
+/*Foot nav styling*/
+.footer-nav table {
+	display: table;
+	font-family: "century gothic", "avant garde", arial, helvetica, sans-serif;
+	/*max-width: 400px;*/
+	padding: .5em;
+	margin: 1em auto;
+	border-top: 1px solid;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+	border-image: linear-gradient(to left, white, black, white) 100% 0 100% 0 stretch;
+}
+
+.footer-nav tr, .footer-nav td {
+	padding:  0.5em;
+}
+
+.footer-nav a {
+	color: inherit;
+}
+/*End footer nav styling*/

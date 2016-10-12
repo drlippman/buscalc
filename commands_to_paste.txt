@@ -1,0 +1,43 @@
+<div class="videoplayer w639">
+	<video id="video_2.6." class="video-js vjs-default-skin" controls preload="auto" width="639" height="auto">
+		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-6/.mp4" type='video/mp4' />
+		<source src="http://studio11.gcc.edu/courses/bancrofted/math141/video_2-6/.webm" type='video/webm' />
+		<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+	</video>
+</div>
+
+<?php include '../includes/geogebra_main_script.html'; ?>
+<?php include 'geogebra/name-of-file.html'; ?>
+<!--GeoGebra script includes must come after body and before any NAV includes. Ctrl + Shift + M copies code-->
+
+<p>Try it for yourself using this applet:</p>
+<div style="width:676px;height:482px;" id="applet_container" class="geogebra"></div>
+
+\dfrac{}{}
+
+div.thmdef>h4{}+p*
+
+div.example>(h4{Example }+p*)
+
+div.important>h4{}+p*
+
+\[ \begin{align*}
+		=&amp;  \\
+		=&amp;  \\
+		=&amp;  \\
+		=&amp; 
+	\end{align*} \]
+
+images/image0.png
+
+\frac{\partial f}{\partial }
+
+\int\limits_^ \, d
+
+\left.\right|
+
+&ndash;
+
+\lim\limits_{x\to a} f(x)
+
+\frac{d}{dx}\left(  \right)
