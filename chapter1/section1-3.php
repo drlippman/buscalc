@@ -258,7 +258,7 @@ The slope is \(-\frac{2}{3}\). This tells us that for every 3 units the graph "r
 	\begin{align*}
 		0.5+1.2p &amp; =  8.7-0.7p\\
 		1.9p &amp; =  8.2\\
-		p\approx&amp; \$4.32 
+		p &amp; \approx  \$4.32 
 	\end{align*}
 	</p>
 	<p>We can find the output value of the intersection point by evaluating either function at this input: \[s(4.32)=0.5+1.2(4.32)\approx 5.68\]</p>

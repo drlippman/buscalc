@@ -129,7 +129,7 @@
 					\text{average change in population } &amp; =   \frac{\text{change in population}}{\text{change in time}}\\
 					 &amp; =  \frac{\Delta\text{population}}{\Delta\text{time}} \\
 					 &amp; =  \frac{4000\text{ bacteria}}{7\text{ days}} \\
-					\approx&amp; 570\text{ bacteria/day}.
+					 &amp; \approx  570\text{ bacteria/day}.
 				\end{align*} \]
 			</p>
 			<p>This is the slope of the secant line through the two points (3, 500) and (10, 4500).</p>

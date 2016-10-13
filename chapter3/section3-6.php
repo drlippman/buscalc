@@ -43,7 +43,7 @@
 	<p>The average hourly production is \( \frac{1}{9-0}\int_0^9\left(5+\sqrt{t}\right)\, dt = 7 \) cars per hour.</p>
 </div>
 
-<p>A note about the units &ndash; remember that the definite integral has units (cars per hour)\( \cdot \)(hours) = cars. But the \( \frac{1}{b-a} \) in front has units \(\frac{1}{\text{hours}}\) &ndash; the units of the average value are cars per hour, just what we expect an average rate to be.</p>
+<p>A note about the units &ndash; remember that the definite integral has units (cars per hour)\( \cdot \)(hours) = cars. But the \( \frac{1}{b-a} \) in front has units \(\frac{1}{\text{hours}}\) so the units of the average value are cars per hour, just what we expect an average rate to be.</p>
 
 <div class="important">
 	<h4>In general&hellip;</h4>
@@ -134,6 +134,35 @@
 
 <p>In this example, it was easy to see exactly where the two curves crossed so we could break the region into the two pieces to figure separately. In other examples, you might need to solve an equation to find where the curves cross.</p>
 
+<div class="example">
+	<h4>Example 4</h4>
+	<p>Find the area bounded by the graphs of \(f(x) = x^2\) and \(g(x) = x+6\).</p>
+	<p>To begin, it will help to sketch a graph of the functions to see the area encosed.</p>
+	<figure><img src="images/areabetween1.png" alt="graph"/></figure>
+	<p>To set up the integral for the area, we need to determine where the line intersects the parabola.  While the points look fairly clear in the graph, it will be good to verify the points algebraically:
+	\[ \begin{align*}
+		x^2 &amp; = x+6 \\
+		x^2 - x -6 &amp; =  0 \\
+		(x-3)(x+2) &amp; =  1 \\
+		x &amp; = -2, 3 
+	\end{align*} \]
+	</p>
+	<p>Over this interval \(-2 \leq x \le 3\) notice the linear function is on top, so if were were to draw a rectangle between the curves, the height would be (top function) &minus; (bottom function) = \((x+6)-x^2\).</p>
+	<p>Setting up a definite integral for this area: \[ \text{Area }= \int_{-2}^3 (x+6-x^2)\, dx\]</p>
+	<p>We can evaluate this integral using antiderivatives:
+	\[ \begin{align*}
+	\int_{-2}^3 (x+6-x^2)\, dx &amp; =  \left[\frac{x^2}{2} + 6x - \frac{x^3}{3}\right]_{-2}^3 \\
+		 &amp; =  \left(\frac{3^2}{2} + 6\cdot 3 -\frac{3^3}{3}\right)-\left(\frac{(-2)^2}{2} + 6\cdot(-2) -\frac{(-2)^3}{3}\right) \\
+		 &amp; =  \left(\frac{9}{2} + 18 - \frac{27}{3}\right) - \left(\frac{4}{2} - 12 -\frac{8}{3}\right) \\
+		 &amp; =  \left(\frac{9}{2} + 18 - 9\right) - \left(2 - 12 -\frac{8}{3}\right) \\
+		 &amp; =  \left(\frac{9}{2} +9\right) - \left(-10 -\frac{8}{3}\right) \\
+		 &amp; =  \frac{9}{2} +9 +10 +\frac{8}{3} \\
+		 &amp; =  \frac{157}{6}
+	\end{align*} \]
+	</p>
+	<p>The area between the curves is \(\frac{157}{6}\approx 26.167\) square units.</p>
+</div>
+
 <div class="videoplayer w639">
 	<video id="video_3.6.4" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
 		<source src="video_3-6/area_between_curves_part_2.webm" type='video/webm' />
@@ -143,7 +172,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 4</h4>
+	<h4>Example 5</h4>
 	<p>Two objects start from the same location and travel along the same path with velocities \( v_A(t)=t+3 \) and \( v_B(t)=t^2-4t+3 \) meters per second. How far ahead is \(A\) after 3 seconds?</p>
 	<figure><img src="images/image051.png" alt="graph"/></figure>
 	<p>Since \( v_A(t) \geq v_B(t) \) , the <q>area</q> between the graphs of \( v_A \) and \( v_B \) represents the distance between the objects.</p>
@@ -192,7 +221,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 5</h4>
+	<h4>Example 6</h4>
 	<p>Find the volume of the solid formed by rotating the area under \( f(x)=e^{-x} \) on the interval [0,1] about the \(x\)-axis.</p>
 	<figure><img src="images/image073.png" alt="region"/></figure>
 	<p>This is the region pictured in the earlier example. We substitute in the function and bounds into the formula we derived to set up the definite integral: \[ \text{Volume} = \int_0^1 \pi\left(e^{-x}\right)^2\, dx. \]</p>

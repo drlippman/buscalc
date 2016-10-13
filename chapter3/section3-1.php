@@ -64,16 +64,16 @@
 	<p>
 	\[ \begin{align*}
 			\text{Total water } &amp; =  \text{ total area}\\
-			\approx&amp; \text{ area of rectangle }+\text{ area of the "triangle"} \\
-			\approx&amp; \left(2000 \frac{\text{ft}^3}{\text{s}}\right)\left(30 \text{ days}\right)+\frac{1}{2}\left(1500\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
+			 &amp; \approx  \text{ area of rectangle }+\text{ area of the "triangle"} \\
+			 &amp; \approx  \left(2000 \frac{\text{ft}^3}{\text{s}}\right)\left(30 \text{ days}\right)+\frac{1}{2}\left(1500\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
 			 &amp; =  \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right)
 		\end{align*} \]
 	</p>
 	<p>Note that we need to convert the units to make sense of our result:
 		\[ \begin{align*}
-			\text{Total water }\approx&amp; \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
+			\text{Total water } &amp; \approx  \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(30\text{ days}\right) \\
 			 &amp; =  \left(2570\frac{\text{ft}^3}{\text{s}}\right)\left(2,\!592,\!000\text{ sec}\right) \\
-			\approx&amp; 7.128\cdot 10^9\text{ ft}^3
+			 &amp; \approx  7.128\cdot 10^9\text{ ft}^3
 		\end{align*} \]
 	</p>
 	<p>About 7 billion cubic feet of water flowed past Goldbar in October.</p>
@@ -295,7 +295,7 @@
 	<p>The change in population is:
 	\[ \begin{align*}
 		\int\limits_{1980}^{1990} f(t) \,dt &amp; =  -(\text{area between \( f \) and axis}) \\
-		\approx&amp; -(200\text{ ducks/year})\cdot (10\text{ years}) \\
+		 &amp; \approx  -(200\text{ ducks/year})\cdot (10\text{ years}) \\
 		 &amp; =  -2000\text{ ducks}
 	\end{align*} \]
 	</p>

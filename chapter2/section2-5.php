@@ -185,7 +185,7 @@
 			\[ \begin{align*}
 				\frac{dy}{dt} &amp; =  \frac{d}{dt}\left(2400\cdot 2^{t/3}\right) \\
 				 &amp; =  2400\cdot 2^{t/3}\cdot \ln(2)\cdot\frac{1}{3} \\
-				\approx&amp; 554.5\cdot 2^{t/3}
+				 &amp; \approx  554.5\cdot 2^{t/3}
 			\end{align*} \]
 		So, at \( t=0 \) the rate of growth of the disease is approximately \(554.5\cdot 2^0 \approx 554.5\) people/year. In 2 years the rate of growth will be approximately \(554.5\cdot 2^{2/3} \approx 880\) people/year.
 		</li>

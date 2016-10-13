@@ -229,7 +229,7 @@
 			\text{Net change in cost } &amp; =  \int\limits_4^5 \left(4x^{-1/2}+2\right)\, dx \\
 			 &amp; =  \left[ 8\sqrt{x}+2x \right]_4^5 \\
 			 &amp; =  \left( 8\sqrt{5}+2(5) \right)-\left( 8\sqrt{4}+2(4) \right) \\
-			\approx&amp; 3.889
+			 &amp; \approx  3.889
 		\end{align*} \]
 	</p>
 	<p>It will cost 3.889 thousand dollars to increase production from 4 thousand items to 5 thousand items. (The final answer would be better written as $3889.)</p>

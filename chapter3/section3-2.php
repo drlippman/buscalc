@@ -38,7 +38,7 @@
 <div class="example">
 	<h4>Example 1</h4>
 	<p>Find \(f(x)\) if \(f '(x) = 2x\).</p>
-	<p>Oooh, I know this one. It's \( f(x)=x^2+3 \). Oh, wait, you were thinking something else? Yes, I guess you're right &ndash; \( f(x)=x^2 \) works too. So does \( f(x)=x^2-\pi \), and \( f(x)=x^2+104,\!589.2 \). In fact, there are lots of answers.</p>
+	<p>Oooh, I know this one. It's \( f(x)=x^2+3 \). Oh, wait, you were thinking something else? Yes, I guess you're right, \( f(x)=x^2 \) works too. So does \( f(x)=x^2-\pi \), and \( f(x)=x^2+104,\!589.2 \). In fact, there are lots of answers.</p>
 </div>
 
 <p>In fact, there are infinitely many functions that all have the same derivative. And that makes sense &ndash; the derivative tells us about the shape of the function, but it doesn't tell about the location. We could shift the graph up or down and the shape wouldn't be affected, so the derivative would be the same.</p>
