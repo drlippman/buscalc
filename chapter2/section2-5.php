@@ -37,13 +37,13 @@
 
 <div class="important">
 	<h4>Derivative Rules: Chain Rule</h4>
-	<p>In what follows, \(f\) and \(g\) are differentiable functions with \( y=f(u) \) and \( u=g(x) \).</p>
+	<p>In what follows, \(f\) and \(g\) are differentiable functions where \(y = f(g(x))\).  We could alternatively write \( y=f(u) \) and \( u=g(x) \).</p>
 	<h5>Chain Rule (Leibniz notation)</h5>
 	<p>\[\frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx}\]</p>
 	<p>Notice that the \(du\)’s seem to cancel. This is one advantage of the Leibniz notation &ndash; it can remind you of how the chain rule chains together.</p>
 	
 	<h5>Chain Rule (using prime notation)</h5>
-	<p>\[f'(x)=f'(u)\cdot g'(x)=f'\left(g(x)\right)\cdot g'(x)\]</p>
+	<p>\[\frac{d}{dx} f\left(g(x)\right) =f'\left(g(x)\right)\cdot g'(x)\]</p>
 	
 	<h5>Chain Rule (in words)</h5>
 	<p>The derivative of a composition is the derivative of the outside (with the inside staying the same) TIMES the derivative of the inside.</p>

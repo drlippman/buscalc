@@ -57,6 +57,14 @@
 	<p>Let \( y=f(x) \). The <strong>second derivative of \(f\)</strong> is the derivative of \( y'=f'(x) \).</p>
 	<p>Using prime notation, this is \( f''(x) \) or \( y'' \). You can read this aloud as "f double prime of x" or "y double prime."</p>
 	<p>Using Leibniz notation, the second derivative is written \( \frac{d^2y}{dx^2} \) or \( \frac{d^2f}{dx^2} \). This is read aloud as "the second derivative of y (or f)."</p>
+</div>
+
+<div class="important">
+	<h4>Derivatives and the Graph of a Function</h4>
+	<p>The first derivative tells us if a function is increasing or decreasing</p>
+	<p>If \( f'(x) \) is positive on an interval, the graph of \( y=f(x) \) is <strong>increasing</strong> on that interval.</p>
+	<p>If \( f'(x) \) is negative on an interval, the graph of \( y=f(x) \) is <strong>decreasing</strong> on that interval.</p>
+	<p>The second derivative tells us if a function is concave up or concave down</p>
 	<p>If \( f''(x) \) is positive on an interval, the graph of \( y=f(x) \) is <strong>concave up</strong> on that interval. We can say that \(f\) is increasing (or decreasing) <strong>at an increasing rate</strong>.</p>
 	<p>If \( f''(x) \) is negative on an interval, the graph of \( y=f(x) \) is <strong>concave down</strong> on that interval. We can say that \(f\) is increasing (or decreasing) <strong>at a decreasing rate</strong>.</p>
 </div>

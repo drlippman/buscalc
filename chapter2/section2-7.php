@@ -318,7 +318,8 @@ This confirms what we saw before in the graph.</p>
 
 <div class="important">
 	<h4>To find Global Extremes</h4>
-	<p>The only places where a function can have a global extreme are critical points or endpoints.</p>
+	<p>This technique can be used when you are trying to find global extrema over a limited interval.</p>
+	<p>The only places where a function can have a global extreme on a limited interval are at critical points or endpoints.</p>
 	<ul>
 		<li>If the function has only one critical point, and it's a local extreme, then it is also the global extreme.</li>
 		<li>If there are endpoints, find the global extremes by comparing \(y\)-values at all the critical points and at the endpoints.</li>
@@ -360,7 +361,7 @@ This confirms what we saw before in the graph.</p>
 
 <div class="important">
 	<h4>Caution</h4>
-	<p>Be careful!  You can <strong>only</strong> use this technique (evaluating the function at endpoints and critical values) to determine <strong>global</strong> extrema.  If a question 
+	<p>Be careful!  You can <strong>only</strong> use this technique (evaluating the function at endpoints and critical values) to determine <strong>global</strong> extrema over a limited interval.  If a question 
 	asks for <strong>local</strong> extrema, you <strong>must</strong> use the first or second derivative test described earlier in the section</p>
 </div>
 
