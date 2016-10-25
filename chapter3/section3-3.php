@@ -69,7 +69,7 @@
 	<p>\[\int \left(f(x)\pm g(x)\right)\, dx=\int f(x)\, dx \pm \int g(x)\, dx\]</p>
 	
 	<h5>Power Rule</h5>
-	<p>\[ \int x^n \, dx = \frac{x^{n+1}}{n+1}, \text{ provided that } n\neq -1\]</p>
+	<p>\[ \int x^n \, dx = \frac{x^{n+1}}{n+1}+C, \text{ provided that } n\neq -1\]</p>
 	<p>Special case: \[ \int k\, dx =kx+C \quad \text{(Because \( k=kx^0 \).)}\] (The other special case (\( n=-1 \)) is covered next.)</p>
 	
 	<h5>Natural Logarithm</h5>
@@ -122,7 +122,8 @@
 <p>The reason we are looking at antiderivatives right now is so we can evaluate definite integrals exactly. Recall the Fundamental Theorem of Calculus:</p>
 
 <div class="important">
-	<p>\[ \int\limits_a^b F'(x)\, dx = F(b)-F(a) \]</p>
+	<p>If \(F(x)\) is a function where \(F'(x) = f(x)\), then </p>
+	<p>\[ \int\limits_a^b f(x)\, dx = F(b)-F(a) \]</p>
 </div>
 
 <p>If we can find an antiderivative for the integrand, we can use that to evaluate the definite integral. The evaluation \(F(b) - F(a)\) is represented as \( \left.F(x)\right]_a^b \) or \( \left.F(x)\right|_a^b \).</p>

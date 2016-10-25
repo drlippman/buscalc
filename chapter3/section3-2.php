@@ -28,7 +28,8 @@
 
 <div class="important">
 	<h4>The Fundamental Theorem of Calculus</h4>
-	<p>\[ \int\limits_a^b F'(x) \,dx = F(b) - F(a) \]</p>
+	<p>If \(F(x)\) is a function where \(F'(x) = f(x)\), then </p>
+	<p>\[ \int\limits_a^b f(x) \,dx = F(b) - F(a) \]</p>
 </div>
 
 <p>This is actually not new for us; we've been using this relationship for some time; we just haven’t written it this way. This says what we've said before: the definite integral of a rate from \(a\) to \(b\) is the net \(y\)-units, the change in \(y\), that accumulate between \(t = a\) and \(t = b\). Here we’ve just made it plain that that the rate is a derivative.</p>
@@ -93,7 +94,7 @@
 <p>Another way to think about the Fundamental Theorem of Calculus is to solve the expression for F(b):</p>
 
 <div class="important">
-	<h4>The Fundamental Theorem of Calculus (restated)</h4>
+<h4>The Fundamental Theorem of Calculus (restated): Net Change</h4>
 	<p>\[ \int\limits_a^b F'(x) \,dx=F(b) - F(a) \] The definite integral of a derivative from a to b gives the net change in the original function.</p>
 	<p>\[F(b) = F(a) + \int\limits_a^b F'(x) \,dx \] The amount we end up is the amount we start with plus the net change in the function.</p>
 </div>

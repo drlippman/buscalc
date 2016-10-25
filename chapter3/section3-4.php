@@ -35,7 +35,7 @@
 	<p>The goal is to turn \( \int f\left( g(x) \right)\, dx \) into \( \int f(u)\, du \), where \(f(u)\) is much less messy than \(f\left(g(x)\right)\).</p>
 	<ol>
 		<li>Let \(u\) be some part of the integrand. A good first choice is <q>one step inside the messiest bit.</q></li>
-		<li>Compute \( du=\frac{du}{dx}dx \).</li>
+		<li>Compute \( du=\frac{du}{dx}\,dx \).</li>
 		<li>Translate all your \(x\)'s into \(u\)'s everywhere in the integral, including the \(dx\). When you're done, you should have a new integral that is entirely in \(u\). If you have any \(x\)'s left, then that's an indication that the substitution didn't work or isn't complete; you may need to go back to step 1 and try a different choice for \(u\).</li>
 		<li>Integrate the new \(u\)-integral, if possible. If you still can't integrate it, go back to step 1 and try a different choice for \(u\).</li>
 		<li>Finally, substitute back \(x\)'s for \(u\)'s everywhere in your answer.</li>
@@ -44,7 +44,7 @@
 
 <div class="example">
 	<h4>Example 1</h4>
-	<p>Evaluate \( \int \frac{x}{\sqrt{4-x^2}}\, dx \).</p>
+	<p>Evaluate \( \displaystyle \int \frac{x}{\sqrt{4-x^2}}\, dx \).</p>
 	<p>This integrand is more complicated than anything in our list of basic integral formulas, so we'll have to try something else. The only tool we have is substitution, so let's try that!</p>
 	<ol>
 		<li>
@@ -52,8 +52,8 @@
 			<p>Let \( u=4-x^2 \).</p>
 		</li>
 		<li>
-			<p>Compute \( du=\frac{du}{dx}dx \):</p>
-			<p>\( du=-2x\, dx \). There is \(x\, dx\) in the integrand, so that’s a good sign; that will be \(-\frac{1}{2}du\).</p>
+			<p>Compute \( du=\frac{du}{dx}\,dx \):</p>
+			<p>\( du=-2x\, dx \). There is \(x\, dx\) in the integrand, so that’s a good sign; that will be \(-\frac{1}{2}\,du\).</p>
 		</li>
 		<li>
 			<p>Translate all your \(x\)'s into \(u\)'s everywhere in the integral, including the \(dx\):</p>
@@ -104,7 +104,7 @@
 
 <div class="example">
 	<h4>Example 2</h4>
-	<p>Evaluate \( \int\frac{e^x\, dx}{\left(e^x+15\right)^3} \)</p>
+	<p>Evaluate \( \displaystyle \int\frac{e^x\, dx}{\left(e^x+15\right)^3} \)</p>
 	<p>This integral is not in our list of building blocks. But notice that the derivative of \( e^x+15 \) (which we see in the denominator) is just \( e^x \) (which we see in the numerator), so substitution will be a good choice for this.</p>
 	<p>Let \( u=e^x+15 \). Then \( du=e^x\, dx \), and this integral becomes \( \int\frac{du}{u^3} = \int u^{-3}\, du \).</p>
 	<p>Luckily, that is on our list of building block formulas: \( \int\frac{du}{u^3} = \frac{u^{-2}}{-2}+C = -\frac{1}{2u^2}+C \).</p>
@@ -115,8 +115,8 @@
 	<h4>Example 3</h4>
 	<p>Evaluate</p>
 	<ol class="smlatin">
-		<li>\( \int\frac{x^2}{x^3+5}\, dx \)</li>
-		<li>\( \int\frac{x^3+5}{x^2}\, dx \)</li>
+		<li>\( \displaystyle \int\frac{x^2}{x^3+5}\, dx \)</li>
+		<li>\( \displaystyle \int\frac{x^3+5}{x^2}\, dx \)</li>
 	</ol>
 	<ol class="smlatin">
 		<li>

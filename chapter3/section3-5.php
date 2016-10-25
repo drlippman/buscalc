@@ -80,7 +80,7 @@
 
 <div class="example">
 	<h4>Example 3</h4>
-	<p>Integrate \( \int\frac{5}{x^2-9}\, dx \).</p>
+	<p>Integrate \( \displaystyle \int\frac{5}{x^2-9}\, dx \).</p>
 	<p>This integral looks very similar to the form of the first integral in the examples table. By employing the rule that allows us to pull out constants, and by rewriting 9 as \(3^2\), we can better see the match. \[ \int\frac{5}{x^2-9}\, dx = 5\int\frac{1}{x^2-3^2}\, dx \]</p>
 	<p>Now we simply use the formula from the table, with \(a = 3\).
 		\[ \begin{align*}
@@ -95,8 +95,8 @@
 
 <div class="example">
 	<h4>Example 4</h4>
-	<p>Integrate \( \int\frac{x^2}{\sqrt{x^6+16}}\, dx \).</p>
-	<p>This integral looks somewhat like the second integral in the example table, but the power of x is incorrect, and there is an x2 in the numerator which does not match. Trying to utilize this rule, we can try to rewrite the denominator to look like (something)\(^2\). Luckily, \( x^6 = \left(x^3\right)^2 \). \[ \int\frac{x^2}{\sqrt{x^6+16}}\, dx = \int\frac{x^2}{\sqrt{\left(x^3\right)^2+16}}\, dx \]</p>
+	<p>Integrate \( \displaystyle \int\frac{x^2}{\sqrt{x^6+16}}\, dx \).</p>
+	<p>This integral looks somewhat like the second integral in the example table, but the power of x is incorrect, and there is an \(x^2\) in the numerator which does not match. Trying to utilize this rule, we can try to rewrite the \(x^6\) in the denominator to look like (something)\(^2\). Luckily, \( x^6 = \left(x^3\right)^2 \). \[ \int\frac{x^2}{\sqrt{x^6+16}}\, dx = \int\frac{x^2}{\sqrt{\left(x^3\right)^2+16}}\, dx \]</p>
 	<p>Now we can use substitution, letting \( u=x^3 \), so \( du=3x^2\, dx \).</p>
 	<p>Making the subsitution: \[ \int\frac{x^2}{\sqrt{\left(x^3\right)^2+16}}\, dx = \int\frac{1}{\sqrt{u^2+16}}\, \frac{du}{3} = \frac{1}{3}\int\frac{1}{\sqrt{u^2+16}}\, du \]</p>
 	<p>Now we can use the table entry: \[ \frac{1}{3}\int\frac{1}{\sqrt{u^2+16}}\, du = \frac{1}{3}\ln\left|u+\sqrt{u^2+16}\right|+C \]</p>
