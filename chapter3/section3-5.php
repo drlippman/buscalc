@@ -14,7 +14,7 @@
 <section class="content">
 <h1>Section 3.5: Additional Integration Techniques</h1>
 
-<section><h2>Integration By Parts</h2>
+<section id="byparts"><h2>Integration By Parts</h2>
 
 <p>Integration by parts is an integration method which enables us to find antiderivatives of some new functions such as \( \ln(x) \) as well as antiderivatives of products of functions such as \( x^2\ln(x) \) and \( xe^x \).</p>
 
@@ -62,7 +62,7 @@
 
 </section>
 
-<section><h2>Integration Using Tables of Integrals</h2>
+<section id="tables"><h2>Integration Using Tables of Integrals</h2>
 
 <p>There are many techniques of integration we will not be studying. Many of them lead to general formulas which can be compiled into a Table of Integrals &ndash; a type of cheat-sheet for integration.</p>
 

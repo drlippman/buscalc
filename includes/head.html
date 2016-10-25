@@ -15,4 +15,27 @@
 <noscript>
  For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
 </noscript>
+<script type="text/javascript">
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+DOMReady(function() {
+	var tohide = getParameterByName("hide");
+	if (tohide && tohide.length>0) {
+		tohide = tohide.split(',');
+		for (var i=0;i<tohide.length;i++) {
+			document.getElementById(tohide[i]).style.display="none";		
+		}
+	}
+});
+</script>
 </head>

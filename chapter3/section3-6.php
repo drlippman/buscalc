@@ -14,7 +14,7 @@
 <section class="content">
 <h1>Section 3.6: Average Value, Area, and Volume</h1>
 
-<section><h2>Average Value</h2>
+<section id="avgval"><h2>Average Value</h2>
 
 <p>We know the average of \(n\) numbers \(a_1, a_2, \dots , a_n\) is their sum divided by \(n\). But what if we need to find the average temperature over a day's time &ndash; there are too many possible temperatures to add them up! This is a job for the definite integral.</p>
 
@@ -84,7 +84,7 @@
 
 </section>
 
-<section><h2>Area</h2>
+<section id="area"><h2>Area</h2>
 
 <p>We have already used integrals to find the area between the graph of a function and the horizontal axis. Integrals can also be used to find the area between two graphs.</p>
 
@@ -197,7 +197,7 @@
 
 </section>
 
-<section><h2>Volume</h2>
+<section id="volume"><h2>Volume</h2>
 
 <p>Just as we can partition an interval and imagine approximating an area with rectangles to find a formula for the area between curves, we can partition an interval and imagine approximating a volume with simple shapes to find a formula for the volume of a solid. While this approach works for a variety of shapes, our focus will be on shapes formed by revolving a curve around the horizontal axis.</p>
 

@@ -14,7 +14,7 @@
 <section class="content">
 <h1>Section 3.7: Applications to Business</h1>
 
-<section><h2>Consumer and Producer Surplus</h2>
+<section id="surplus"><h2>Consumer and Producer Surplus</h2>
 
 <p>Here are a demand and a supply curve for a product.  Which is which?</p>
 <figure><img src="images/image062.png" alt="graph"/></figure>
@@ -151,7 +151,7 @@
 
 </section>
 
-<section><h2>Continuous Income Stream</h2>
+<section id="incstream"><h2>Continuous Income Stream</h2>
 
 <p>In precalculus, you learned about compound interest in that really simple situation where you made a single deposit into an interest-bearing account and let it sit undisturbed, earning interest, for some period of time.  Recall:</p>
 <div class="important">
