@@ -62,14 +62,73 @@
 		<li>Find the producer surplus at the equilibrium price.</li>
 	</ol>
 	<ol class="smlatin">
-		<li>The equilibrium point is where the supply and demand functions are equal.  Solving \(-0.8q+150 = 5.2q\)    gives   \(q = 25\).</li>
-		<li>The consumer surplus is \[ \int\limits_0^{25} (-0.8q+150)\, dq - (130)(25) = \$ 250. \]</li>
-		<li>The producer surplus is \[ (130)(25) - \int\limits_0^{25} 5.2q\, dq = \$ 1625. \]</li>
+		<li><p>The equilibrium point is where the supply and demand functions are equal. 
+		\[ \begin{align*}
+			-0.8q+150 	&amp; = 5.2q \\
+			150 		&amp; = 6.0q \\
+			q 			&amp; = \frac{150}{6} \\
+			q			&amp; = 25
+			\end{align*} \]</p>
+			
+			<p>The equilibrium quantity is 25 items.  To find the corresponding equilibrium price we can use either the demand or supply equation.</p>
+			
+			<p>\(s(25) = 5.2(25) = 130\).  The equilibrium price is $130.</p>
+			
+		<li>The consumer surplus is 
+		\[  \begin{align*}
+			\int_0^{25} (-0.8q+150)\, dq - (130)(25) 	&amp; = \left[-0.8 \frac{q^2}{2} + 150 q\right]_0^{25} - 3250 \\
+														&amp; = \left(-0.4\left(25^2\right) + 150(25)\right) - \left(-0.4\left(0^2\right) + 150(0)\right) - 3250 \\
+														&amp; = 3500 - 0 - 3250 \\
+														&amp; = \$250
+			\end{align*} \]</li>
+			
+		<li>The producer surplus is
+		
+		\[  \begin{align*}
+			(130)(25) - \int_0^{25} 5.2q\, dq 	&amp; = 3250 - \left[5.2 \frac{q^2}{2}\right]_0^{25}  \\
+												&amp; = 3250 - \left(\left(2.6\left(25^2\right)\right) - \left(2.6\left(0^2\right)\right)\right) \\
+												&amp; = 3250 - (1625 - 0) \\
+												&amp; = \$1625
+			\end{align*} \]</li>
 	</ol>
 </div>
 
 <div class="example">
 	<h4>Example 2</h4>
+	<p>Suppose the demand for a product is given by \( p=d(q)=300-5q \) and the supply for the same product is given by  \( p=s(q)=q^2 \).  For both functions, \(q\) is the quantity and \(p\) is the price, in dollars.</p>
+	<ol class="smlatin">
+		<li>Find the equilibrium point.</li>
+		<li>Find the consumer surplus at the equilibrium price.</li>
+		<li>Find the producer surplus at the equilibrium price.</li>
+	</ol>
+	<ol class="smlatin">
+		<li><p>The equilibrium point is where the supply and demand functions are equal:  \(300-5q = q^2\). </p>
+		    <p>This is quadratic, so we can rearrange the equation so one side is zero:  \(q^2 + 5q - 300 = 0\).</p>
+		    <p>We could solve this using the quadratic equation:  \(q = \frac{-5 \pm \sqrt{5^2-4(1)(-300)}}{2(1)}\)</p>
+		    <p>or we could factor:  \((q+20)(q-15)=0\), so \(q =-20\) or \(q = 15\).</p>
+		    <p>We want the positive solution. The equilibrium quantity is 15 items.  The equilibrium price is \(s(15) = 15^2 = \$225\).</p>
+		</li>	
+		<li>The consumer surplus is 
+		\[  \begin{align*}
+			\int_0^{15} (300-5q)\, dq - (225)(15) 	&amp; = \left[300q -  5\frac{q^2}{2}\right]_0^{15} - 3375 \\
+													&amp; = \left(300(15) - 2.5\left(15^2\right)\right) - \left(300(0) - 2.5\left(0^2\right)\right) - 3375 \\
+													&amp; = 3937.5 - 0 - 3375 \\
+													&amp; = \$562.50
+			\end{align*} \]</li>
+			
+		<li>The producer surplus is 
+		
+		\[  \begin{align*}
+			(225)(15)  - \int_0^{15} q^2\, dq 	&amp; = 3375 - \left[\frac{q^3}{3}\right]_0^{15}s  \\
+												&amp; = 3375 - \left(\left(\frac{15^3}{3}\right) - \left(\frac{0^3}{3}\right)\right) \\
+												&amp; = 3375 - (1125 - 0) \\
+												&amp; = \$2250
+			\end{align*} \]</li>
+	</ol>
+</div>
+
+<div class="example">
+	<h4>Example 3</h4>
 	<p>The tables below show information about the demand and supply functions for a product.  For both functions, \(q\) is the quantity and \(p\) is the price, in dollars.</p>
 	<table class="border">
 		<tr>
@@ -189,7 +248,7 @@
 </div>
 
 <div class="example">
-	<h4>Example 3</h4>
+	<h4>Example 4</h4>
 	<p>You have an opportunity to buy a business that will earn $75,000 per year continuously over the next eight years.  Money can earn 2.8% per year, compounded continuously.  Is this business worth its purchase price of $630,000?</p>
 	<p>First, please note that we still have to make some simplifying assumptions.  We have to assume that the interest rates are going to remain constant for that entire eight years.  We also have to assume that the $75,000 per year is coming in continuously, like a faucet dripping dollars into the business.  Neither of these assumptions might be accurate.  </p>
 	<p>But moving on: The present value of the $630,000 is, well, $630,000.  This is one investment, where we put our $630,000 in the bank and let it sit there.</p>
@@ -200,7 +259,7 @@
 <p>While this integral could have been done using substitution, for many of the integrals in this section we don't have the techniques to use antiderivatives or, in some cases, no antiderivative exists.  Technology will work quickly, and it will give you an answer that is good enough.</p>
 
 <div class="example">
-	<h4>Example 4</h4>
+	<h4>Example 5</h4>
 	<p>A company is considering purchasing a new machine for its production floor.  The machine costs $65,000.  The company estimates that the additional income from the machine will be a constant $7000 for the first year, then will increase by $800 each year after that.  In order to buy the machine, the company needs to be convinced that it will pay for itself by the end of 8 years with this additional income.  Money can earn 1.7% per year, compounded continuously.  Should the company buy the machine?</p>
 	<p>We'll assume that the income will come in continuously over the 8 years.  We’ll also assume that interest rates will remain constant over that 8-year time period.</p>
 	<p>We're interested in the present value of the machine, which we will compare to its $65,000 price tag.  Let \(t\)  be the time, in years, since the purchase of the machine.  The income from the machine is different depending on the time.  </p>
