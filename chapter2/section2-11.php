@@ -169,7 +169,7 @@
 	\[ \begin{align*}
 		\frac{d}{dt}(TC) &amp; =  \frac{d}{dt}\left(300,000 + 4x + 200,000x^{-1}\right) \\
 		\frac{d TC}{dt} &amp; =  4\frac{dx}{dt} - 200,000x^(-2)\frac{dx}{dt}\\
-		\frac{d TC}{dt} &amp; =  \left(4 - \frac{200,000}{5000^2}\right)\frac{dx}{dt}\\
+		\frac{d TC}{dt} &amp; =  \left(4 - \frac{200,000}{x^2}\right)\frac{dx}{dt}\\
 	\end{align*} \]
 	</p>
 	<p>We know the quantity produced is increasing by 20 items per week when the production is 2,000 items, giving \( \frac{dx}{dt}=20 \) when \(x = 2000\). Plugging in these values, 
