@@ -137,7 +137,7 @@
 <div class="example">
 	<h4>Example 4</h4>
 	<p>Find the area bounded by the graphs of \(f(x) = x^2\) and \(g(x) = x+6\).</p>
-	<p>To begin, it will help to sketch a graph of the functions to see the area encosed.</p>
+	<p>To begin, it will help to sketch a graph of the functions to see the area enclosed.</p>
 	<figure><img src="images/areabetween1.png" alt="graph"/></figure>
 	<p>To set up the integral for the area, we need to determine where the line intersects the parabola.  While the points look fairly clear in the graph, it will be good to verify the points algebraically:
 	\[ \begin{align*}
