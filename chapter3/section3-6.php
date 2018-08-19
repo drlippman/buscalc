@@ -147,7 +147,7 @@
 		x &amp; = -2, 3 
 	\end{align*} \]
 	</p>
-	<p>Over this interval \(-2 \leq x \le 3\) notice the linear function is on top, so if were were to draw a rectangle between the curves, the height would be (top function) &minus; (bottom function) = \((x+6)-x^2\).</p>
+	<p>Over this interval \(-2 \leq x \le 3\) notice the linear function is on top, so if we were to draw a rectangle between the curves, the height would be (top function) &minus; (bottom function) = \((x+6)-x^2\).</p>
 	<p>Setting up a definite integral for this area: \[ \text{Area }= \int_{-2}^3 (x+6-x^2)\, dx\]</p>
 	<p>We can evaluate this integral using antiderivatives:
 	\[ \begin{align*}
