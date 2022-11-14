@@ -153,14 +153,14 @@
 	\[ \begin{align*}
 	\int_{-2}^3 (x+6-x^2)\, dx &amp; =  \left[\frac{x^2}{2} + 6x - \frac{x^3}{3}\right]_{-2}^3 \\
 		 &amp; =  \left(\frac{3^2}{2} + 6\cdot 3 -\frac{3^3}{3}\right)-\left(\frac{(-2)^2}{2} + 6\cdot(-2) -\frac{(-2)^3}{3}\right) \\
-		 &amp; =  \left(\frac{9}{2} + 18 - \frac{27}{3}\right) - \left(\frac{4}{2} - 12 -\frac{8}{3}\right) \\
-		 &amp; =  \left(\frac{9}{2} + 18 - 9\right) - \left(2 - 12 -\frac{8}{3}\right) \\
-		 &amp; =  \left(\frac{9}{2} +9\right) - \left(-10 -\frac{8}{3}\right) \\
-		 &amp; =  \frac{9}{2} +9 +10 +\frac{8}{3} \\
-		 &amp; =  \frac{157}{6}
+		 &amp; =  \left(\frac{9}{2} + 18 - \frac{27}{3}\right) - \left(\frac{4}{2} - 12 +\frac{8}{3}\right) \\
+		 &amp; =  \left(\frac{9}{2} + 18 - 9\right) - \left(2 - 12 +\frac{8}{3}\right) \\
+		 &amp; =  \left(\frac{9}{2} +9\right) - \left(-10 +\frac{8}{3}\right) \\
+		 &amp; =  \frac{9}{2} +9 +10 -\frac{8}{3} \\
+		 &amp; =  \frac{125}{6}
 	\end{align*} \]
 	</p>
-	<p>The area between the curves is \(\frac{157}{6}\approx 26.167\) square units.</p>
+	<p>The area between the curves is \(\frac{125}{6}\approx 20.833\) square units.</p>
 </div>
 
 <div class="videoplayer w639">
