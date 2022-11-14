@@ -92,7 +92,7 @@
 
 <figure><img src="images/image049.png" alt="grapg"/></figure>
 
-<p>The limit of this Riemann sum, as the number of rectangles gets larger and their width gets smaller, is the definite integral \( \int_a^b \left(f(c_i) - g(c_i)\right)\, dx \).</p>
+<p>The limit of this Riemann sum, as the number of rectangles gets larger and their width gets smaller, is the definite integral \( \int_a^b \left(f(x) - g(x)\right)\, dx \).</p>
 
 <div class="videoplayer w639">
 	<video id="video_3.6.3" class="video-js vjs-default-skin" controls preload="metadata" width="639" height="auto">
@@ -104,7 +104,7 @@
 
 <div class="important">
 	<h4>Area Between Two Curves</h4>
-	<p>The area between two curves \(f(x)\) and \(g(x)\), where \(f(x) \geq g(x)\), between \(x = a\) and \(x = b\) is \[ \int_a^b \left(f(c_i) - g(c_i)\right)\, dx. \]</p>
+	<p>The area between two curves \(f(x)\) and \(g(x)\), where \(f(x) \geq g(x)\), between \(x = a\) and \(x = b\) is \[ \int_a^b \left(f(x) - g(x)\right)\, dx. \]</p>
 	<p>The integrand is <q>top - bottom.</q> Make a graph or use test values to be sure which curve is which.</p>
 </div>
 
