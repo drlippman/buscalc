@@ -125,7 +125,7 @@
 	<p>In general, the average of the left-hand and right-hand estimates will be closer to the real area than either individual estimate.</p>
 	<p>Our estimate of the area under the curve is about 1.68. (The actual area is about 1.61.)</p>
 	<p>This applet will allow you to see how the approximation changes if you use more rectangles; change the <q>position</q> slider to switch between using the left endpoints, right endpoints, and midpoints:</p>
-	<iframe class="geogebra" scrolling="no" src="https://tube.geogebra.org/material/iframe/id/WhGszJ9H/width/676/height/482/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/preferhtml5" width="676px" height="482px" style="border:0px;"> </iframe>
+	<iframe class="geogebra" scrolling="no" src="https://geogebra.org/material/iframe/id/WhGszJ9H/width/676/height/482/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/false/sri/true/at/preferhtml5" width="676px" height="482px" style="border:0px;"> </iframe>
 </div>
 
 <div class="videoplayer w639">

@@ -131,7 +131,7 @@
 	</video>
 </div>
 <p>Here is a copy of the applet used in this video:</p>
-<iframe class="geogebra" scrolling="no" src="https://tube.geogebra.org/material/iframe/id/ExD1y47H/width/676/height/482/border/888888/rc/true/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/true/sri/true/at/preferhtml5" width="676px" height="482px" style="border:0px;"> </iframe>
+<iframe class="geogebra" scrolling="no" src="https://geogebra.org/material/iframe/id/ExD1y47H/width/676/height/482/border/888888/rc/true/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/true/sri/true/at/preferhtml5" width="676px" height="482px" style="border:0px;"> </iframe>
 
 <div class="example">
 	<h4>Example 6</h4>
